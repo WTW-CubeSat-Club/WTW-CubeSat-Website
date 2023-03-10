@@ -1,3 +1,3 @@
-# CubeSat
+#W.T. Woodson HS CubeSat Club
 
-This is mostly for the website and also the satellite too
+This is for the website
