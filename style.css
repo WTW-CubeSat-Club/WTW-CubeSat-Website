@@ -11,6 +11,7 @@ footer {
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 body{
   font-family: 'Poppins', sans-serif; 
+  background-color: #fff;
   }
 nav{
   background: royalblue;
@@ -94,3 +95,29 @@ a:hover,a.active{
 #check:checked ~ ul{
   left: 0;
     }
+    
+h1, h2, h3, h4, h5, h6{
+  color: black;
+}
+
+p, span, small{
+	color: #888;
+}
+
+big, b{
+	color: rgb(158, 38, 38);
+}
+
+#box{
+	width: 400px;
+	margin: 0 auto;
+	border: 2px solid #e7e7e7;
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+	background-color: #F8F8F8!important;
+}
+hr{
+	margin: 20px;
+	background-color: #eaeaea;
+}
