@@ -13,9 +13,11 @@ body{
   font-family: 'Poppins', sans-serif; 
   }
 nav{
-  background: #000058;
+  background: linear-gradient(to right, rgb(116,116,164), rgba(0,0,88,255));
   height: 80px;
   width: 100%;
+  position: fixed;
+  top: 0;
   }
 label.logo{
   color: white;

@@ -23,6 +23,16 @@ big, b{
 	padding: 20px;
 	background-color: #F8F8F8!important;
 }
+#topbox{
+	width: 400px;
+	margin: 0 auto;
+	border: 2px solid #e7e7e7;
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px;
+	background-color: #F8F8F8!important;
+	margin-top: 60px;
+}
 hr{
 	margin: 20px;
 	background-color: #eaeaea;
