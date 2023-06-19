@@ -14,24 +14,21 @@ big, b{
 	color: rgb(158, 38, 38);
 }
 
-#box{
-	width: 400px;
+#box1{
+	width: 1000px;
 	margin: 0 auto;
-	border: 2px solid #e7e7e7;
-	border-radius: 5px;
 	text-align: center;
 	padding: 20px;
 	background-color: #F8F8F8!important;
 }
-#topbox{
-	width: 400px;
+#box{
+	width: 500px;
 	margin: 0 auto;
 	border: 2px solid #e7e7e7;
 	border-radius: 5px;
 	text-align: center;
 	padding: 20px;
 	background-color: #F8F8F8!important;
-	margin-top: 60px;
 }
 hr{
 	margin: 20px;
@@ -45,3 +42,24 @@ hr{
 	margin-left: 100px;
 	margin-right: 100px;
 }
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: rgb(75, 75, 132);
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+  }
+  #myBtn:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
+  }
+  html {
+	scroll-behavior: smooth;
+  }

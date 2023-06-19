@@ -35,10 +35,20 @@
     </nav>
     <main>
       <br>
-      <div id="topbox" style="text-align: center;">
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id="two-things">
+      <div id="box1">
         <h2 style="font-weight: bold;">Welcome to the WTW CubeSat Club's website!</h2>
         <!--Description of Page-->
-        <p style="padding-left: 10%; padding-right: 10%;">Mission statement can go here</p>
+        <p style="padding-left: 10%; padding-right: 10%;">Our mission at the W.T. Woodson CubeSat Club is to enhance and further our knowledge of outer space, and to provide others with opportunities to assist with our goal of space exploration. We commit ourselves to the values of respect, responsibility, teamwork, collaboration, and integrity through the means of our actions, words, and work ethic. We seek to inquire about innovative ideas to share amongst others; and that we can utilize this gained knowledge to benefit our awareness of the miraculous world that encompasses us.</p>
+      </div>
+      <div>
+        <!--Image of the WTW CubeSat Club Logo-->
+        <img src="CubeSatLogo.PNG" alt="WTW CubeSat Club Logo" style="width:300px;height:300px;">
+      </div>
       </div>
       <br>
       <br>
@@ -55,7 +65,7 @@
         <p> News 1 description</p>
         <a href="https:/google.com" target="_blank" style="text-decoration: underline;">Learn More</a>
       </div>
-      <h2 style="font-weight: bold; text-decoration: underline; text-align: center;">Check out our Twitter and Insta</h3>
+      <h2 style="font-weight: bold; text-decoration: underline; text-align: center;">Check out our Twitter and Instagram feeds</h3>
       <!--Latest Tweets from the club's twitter and Instagram-->
       <div id="two-things" style="margin-bottom: 100px; margin-top: 100px;">
       <a class="twitter-timeline tw-align-left" data-width="750" data-height="500" href="https://twitter.com/WoodsonCubesat?ref_src=twsrc%5Etfw">Tweets by WoodsonCubesat</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -63,6 +73,7 @@
       <script src="https://w.behold.so/widget.js" type="module"></script>
       </div>
       <hr>
+      <button onclick="topFunction()" id="myBtn" class="btn btn-dark" title="Go to the top">^</button>
     </main>
     <!--Script for light and dark theme + console storage-->
     <script type="text/javascript">
@@ -95,7 +106,25 @@
         document.getElementById('mystylesheet').href = sheet
         localStorage.setItem('theme', sheet)
       }
-      
+      // Get the button
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 500px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
   </body>
   <footer>
