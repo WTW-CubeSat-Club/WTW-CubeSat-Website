@@ -17,6 +17,7 @@ big, b{
 #box1{
 	width: 1000px;
 	margin: 0 auto;
+	border-radius: 5px;
 	text-align: center;
 	padding: 20px;
 	background-color: #F8F8F8!important;
