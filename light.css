@@ -23,7 +23,7 @@ big, b{
 	background-color: #F8F8F8!important;
 }
 #box{
-	width: 500px;
+	width: 800px;
 	margin: 0 auto;
 	border: 2px solid #e7e7e7;
 	border-radius: 5px;
@@ -63,4 +63,7 @@ hr{
   }
   html {
 	scroll-behavior: smooth;
+  }
+  .animate__animated.animate__backInLeft {
+	--animate-duration: 2s;
   }

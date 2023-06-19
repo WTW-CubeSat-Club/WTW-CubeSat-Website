@@ -63,3 +63,6 @@ hr{
   html {
 	scroll-behavior: smooth;
   }
+  .animate__animated.animate__backInLeft {
+	--animate-duration: 2s;
+  }
