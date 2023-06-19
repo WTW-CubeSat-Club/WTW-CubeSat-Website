@@ -13,7 +13,7 @@ body{
   font-family: 'Poppins', sans-serif; 
   }
 nav{
-  background: royalblue;
+  background: #000058;
   height: 80px;
   width: 100%;
   }
@@ -38,7 +38,6 @@ nav ul li a{
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
-  text-transform: uppercase;
   }
 a.active,a:hover{
   background: cornflowerblue;
