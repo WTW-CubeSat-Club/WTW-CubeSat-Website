@@ -37,3 +37,11 @@ hr{
 	margin: 20px;
 	background-color: #eaeaea;
 }
+#two-things{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
