@@ -16,4 +16,5 @@ window.onscroll =
         : 'none';
 
 // When the user clicks on the button, scroll to the top of the document
-const scrollToTop = () => document.body.scrollTop = document.documentElement.scrollTop = 0;
+const scrollToTop =
+    () => document.body.scrollTop = document.documentElement.scrollTop = 0;

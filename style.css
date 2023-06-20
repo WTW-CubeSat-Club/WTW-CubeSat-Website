@@ -21,7 +21,7 @@ body {
 }
 
 nav {
-    background: linear-gradient(to right, rgb(116,116,164), rgba(0,0,88,255));
+    background: linear-gradient(to right, #ec1c24, #000058);
     height: 80px;
     width: 100%;
     position: fixed;
@@ -30,9 +30,11 @@ nav {
 }
 
 nav a img {
-    width: 85px;
+    height: 80px;
     top: 50px;
     vertical-align: top;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 
 label.logo {
