@@ -30,9 +30,9 @@
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
+        <!--Dark/Light info and options-->
         <button class="btn btn-light" onclick="swapStyle('light.css')">☀️</button>
         <button class="btn btn-dark" onclick="swapStyle('dark.css')">🌙</button>
-          <!--Dark/Light info and options-->
       </ul>
     </nav>
     <main>
@@ -42,28 +42,26 @@
       <br>
       <br>
       <div id="two-things">
-      <div id="box1" class="animate__animated animate__backInLeft">
-        <h2 style="font-weight: bold;">Welcome to the WTW CubeSat Club's website!</h2>
-        <!--Description of Page-->
-        <p style="padding-left: 10%; padding-right: 10%;">Our mission at the W.T. Woodson CubeSat Club is to enhance and further our knowledge of outer space, and to provide others with opportunities to assist with our goal of space exploration. We commit ourselves to the values of respect, responsibility, teamwork, collaboration, and integrity through the means of our actions, words, and work ethic. We seek to inquire about innovative ideas to share amongst others; and that we can utilize this gained knowledge to benefit our awareness of the miraculous world that encompasses us.</p>
-      </div>
-      <div>
-        <!--Image of the WTW CubeSat Club Logo-->
-        <img src="CubeSatLogo.PNG" alt="WTW CubeSat Club Logo" style="width:300px;height:300px;">
-      </div>
+        <div id="box1" class="animate__animated animate__backInLeft">
+          <h2 style="font-weight: bold;">Welcome to the WTW CubeSat Club's website!</h2>
+          <!--Description of Page-->
+          <p style="padding-left: 10%; padding-right: 10%;">Our mission at the W.T. Woodson CubeSat Club is to enhance and further our knowledge of outer space, and to provide others with opportunities to assist with our goal of space exploration. We commit ourselves to the values of respect, responsibility, teamwork, collaboration, and integrity through the means of our actions, words, and work ethic. We seek to inquire about innovative ideas to share amongst others; and that we can utilize this gained knowledge to benefit our awareness of the miraculous world that encompasses us.</p>
+        </div>
+        <div>
+          <!--Image of the WTW CubeSat Club Logo-->
+          <img src="CubeSatLogo.PNG" alt="WTW CubeSat Club Logo" style="width:300px;height:300px;">
+        </div>
       </div>
       <br>
       <br>
       <h2 style="font-weight: bold; text-decoration: underline; text-align: center;">The Project's Overview</h2>
       <div id="box" style="text-align: center;">
-        <!--The project-->
         <h3>[Insert CubeSat's name]</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan mi sed arcu varius sollicitudin. Phasellus interdum purus in metus faucibus varius. Fusce accumsan eros a lorem ultrices, ac faucibus nibh elementum. Sed vel arcu eget lorem hendrerit posuere. Morbi quis gravida elit. Cras tincidunt vestibulum lorem, in sagittis nulla volutpat sit amet. Nam convallis varius ante maximus sodales. Sed eget ornare eros, a luctus elit.
           <br>
           <br>
           Sed scelerisque tincidunt suscipit. Sed sed pellentesque ex, sit amet dignissim erat. Nullam massa nibh, iaculis in nisl a, iaculis sagittis velit. Etiam lacinia bibendum nisl, eget finibus dui pulvinar et. Mauris at velit rhoncus, varius nibh nec, vulputate urna. Ut faucibus, nunc vitae lacinia semper, leo nisi auctor leo, id bibendum eros lacus at felis. Curabitur et urna vitae urna volutpat accumsan. Praesent eu diam quis est consequat tristique vel nec sem. Suspendisse feugiat eros a tellus luctus imperdiet. Mauris ut sem sed nibh rhoncus consequat condimentum nec massa. Aliquam consequat sem vel ipsum sollicitudin porta. Integer pellentesque nulla non dignissim congue. Maecenas ut orci finibus, tristique ipsum non, rutrum ex.
-          
-          </p>
+        </p>
         <a href="https:/google.com" target="_blank" style="text-decoration: underline;">Learn More</a>
       </div>
       <h2 style="font-weight: bold; text-decoration: underline; text-align: center;">The Project's Publications</h2>
@@ -71,16 +69,15 @@
       <h2 style="font-weight: bold; text-decoration: underline; text-align: center;">Check out our Twitter and Instagram feeds</h2>
       <!--Latest Tweets from the club's twitter and Instagram-->
       <div id="two-things" style="margin-bottom: 100px; margin-top: 100px;">
-      <a class="twitter-timeline tw-align-left" data-width="750" data-height="500" href="https://twitter.com/WoodsonCubesat?ref_src=twsrc%5Etfw">Tweets by WoodsonCubesat</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      <figure data-behold-id="jk9y5Gw9UuRnjrySYyfx"></figure>
-      <script src="https://w.behold.so/widget.js" type="module"></script>
+        <a class="twitter-timeline tw-align-left" data-width="750" data-height="500" href="https://twitter.com/WoodsonCubesat?ref_src=twsrc%5Etfw">Tweets by WoodsonCubesat</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <figure data-behold-id="jk9y5Gw9UuRnjrySYyfx"></figure>
+        <script src="https://w.behold.so/widget.js" type="module"></script>
       </div>
       <hr>
       <button onclick="topFunction()" id="myBtn" class="btn btn-dark" title="Go to the top">^</button>
     </main>
     <!--Script for light and dark theme + console storage-->
     <script type="text/javascript">
-
       var setTheme = localStorage.getItem('theme')
       console.log('theme:', setTheme)
   
@@ -94,8 +91,6 @@
         document.getElementById('mystylesheet').href = sheet
         localStorage.setItem('theme', sheet)
       }
-  
-  
       
       var setTheme = localStorage.getItem('theme')
       if (setTheme == null){
@@ -104,7 +99,6 @@
         swapStyles(setTheme)
       }
         
-      
       function swapStyles(sheet){
         document.getElementById('mystylesheet').href = sheet
         localStorage.setItem('theme', sheet)
