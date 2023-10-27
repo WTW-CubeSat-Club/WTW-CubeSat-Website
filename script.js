@@ -2,7 +2,6 @@ const swapStyle =
     sheet => localStorage.setItem('theme', document.querySelector('link#mystylesheet').href = sheet);
 
 const setTheme = localStorage.getItem('theme');
-console.log('theme:', setTheme);
 
 swapStyle(setTheme == null ? 'light.css' : setTheme);
 
