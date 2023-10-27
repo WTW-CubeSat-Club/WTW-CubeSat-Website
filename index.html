@@ -1,6 +1,7 @@
 <!-- © 2023, W.T. Woodson HS CubeSat Club. -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="WTW CubeSat Club" content="W.T. Woodson HS is building a 1 unit satelite">
@@ -8,89 +9,109 @@
     <!--External Style Sheet for the nav, footer, and other parts of the body-->
     <link rel="stylesheet" href="style.css" />
     <!--External Style Sheet for Default Mode (Light)-->
-    <link id="mystylesheet" rel="stylesheet" type="text/css" href="light.css">
+    <link id="mystylesheet" rel="stylesheet" type="text/css" href="dark.css">
     <!--Bootstrap for mobile support and customization-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <!--External Script for nav bar-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!--animate.css import-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!--Script for light and dark theme + console storage-->
     <script type="text/javascript" src="script.js" defer></script>
 </head>
+
 <body>
+    <!-- TODO: Figure out how to make header a grid directly -->
     <header>
-        <nav>
+        <div>
             <a href="index.html">
                 <img src="assets/CubeSatLogo.png" alt="WTW CubeSat Club Logo">
             </a>
-            <label class="logo">WTW CubeSat Club</label>
-            <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <!--Dark/Light info and options-->
-                <button class="btn btn-light" onclick="swapStyle('light.css')">☀️</button>
-                <button class="btn btn-dark" onclick="swapStyle('dark.css')">🌙</button>
-            </ul>
-        </nav>
+            <h1>WTW CubeSat Club</h1>
+            <nav>
+                <a class="active" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="https://github.com/WTW-CubeSat-Club" target="_blank" rel="noopener noreferrer">Github</a>
+                <a href="">Join</a>
+                <a href="">Donate</a>
+            </nav>
+            <!--Dark/Light info and options-->
+            <button class="btn btn-light" onclick="swapStyle('light.css')">☀️</button>
+            <button class="btn btn-dark" onclick="swapStyle('dark.css')">🌙</button>
+        </div>
     </header>
+    <!-- Temporary TODO: Remove this -->
+    <div></div>
     <main>
-        <div id="two-things">
-            <div id="box1" class="animate__animated animate__backInLeft">
-                <h2 style="font-weight: bold;">Welcome to the WTW CubeSat Club's website!</h2>
-                <!--Description of Page-->
-                <p style="padding-left: 10%; padding-right: 10%;">Our mission at the W.T. Woodson CubeSat Club is to enhance and further our knowledge of outer space, and to provide others with opportunities to assist with our goal of space exploration. We commit ourselves to the values of respect, responsibility, teamwork, collaboration, and integrity through the means of our actions, words, and work ethic. We seek to inquire about innovative ideas to share amongst others; and that we can utilize this gained knowledge to benefit our awareness of the miraculous world that encompasses us.</p>
-            </div>
-        </div>
-        <br>
-        <br>
-        <h2 style="font-weight: bold; text-decoration: underline; text-align: center;">The Project's Overview</h2>
-        <div id="box" style="text-align: center;">
-            <h3>[Insert CubeSat's name]</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan mi sed arcu varius sollicitudin. Phasellus interdum purus in metus faucibus varius. Fusce accumsan eros a lorem ultrices, ac faucibus nibh elementum. Sed vel arcu eget lorem hendrerit posuere. Morbi quis gravida elit. Cras tincidunt vestibulum lorem, in sagittis nulla volutpat sit amet. Nam convallis varius ante maximus sodales. Sed eget ornare eros, a luctus elit.
-                <br>
-                <br>
-                Sed scelerisque tincidunt suscipit. Sed sed pellentesque ex, sit amet dignissim erat. Nullam massa nibh, iaculis in nisl a, iaculis sagittis velit. Etiam lacinia bibendum nisl, eget finibus dui pulvinar et. Mauris at velit rhoncus, varius nibh nec, vulputate urna. Ut faucibus, nunc vitae lacinia semper, leo nisi auctor leo, id bibendum eros lacus at felis. Curabitur et urna vitae urna volutpat accumsan. Praesent eu diam quis est consequat tristique vel nec sem. Suspendisse feugiat eros a tellus luctus imperdiet. Mauris ut sem sed nibh rhoncus consequat condimentum nec massa. Aliquam consequat sem vel ipsum sollicitudin porta. Integer pellentesque nulla non dignissim congue. Maecenas ut orci finibus, tristique ipsum non, rutrum ex.
+        <section>
+            <h2>Welcome!</h2>
+        </section>
+        <section>
+            <h2>Project Overview</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan mi sed arcu varius sollicitudin.
+                Phasellus interdum purus in metus faucibus varius. Fusce accumsan eros a lorem ultrices, ac faucibus
+                nibh elementum. Sed vel arcu eget lorem hendrerit posuere. Morbi quis gravida elit. Cras tincidunt
+                vestibulum lorem, in sagittis nulla volutpat sit amet. Nam convallis varius ante maximus sodales. Sed
+                eget ornare eros, a luctus elit.
             </p>
-            <a href="https:/google.com" target="_blank" style="text-decoration: underline;">Learn More</a>
-        </div>
-        <h2 style="font-weight: bold; text-decoration: underline; text-align: center;">The Project's Publications</h2>
-        <h2 style="font-weight: bold; text-decoration: underline; text-align: center;">Recent News of the WTW CubeSat Club</h2>
-        <h2 style="font-weight: bold; text-decoration: underline; text-align: center;">Check out our Twitter and Instagram feeds</h2>
-        <!--Latest Tweets from the club's twitter and Instagram-->
-        <div id="two-things" style="margin-bottom: 100px; margin-top: 100px;">
-            <a class="twitter-timeline tw-align-left" data-width="750" data-height="500" href="https://twitter.com/WoodsonCubesat?ref_src=twsrc%5Etfw">Tweets by WoodsonCubesat</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <figure data-behold-id="jk9y5Gw9UuRnjrySYyfx"></figure>
-            <script src="https://w.behold.so/widget.js" type="module"></script>
-        </div>
-        <hr>
+            <p>
+                Sed scelerisque tincidunt suscipit. Sed sed pellentesque ex, sit amet dignissim erat. Nullam massa nibh,
+                iaculis in nisl a, iaculis sagittis velit. Etiam lacinia bibendum nisl, eget finibus dui pulvinar et.
+                Mauris at velit rhoncus, varius nibh nec, vulputate urna. Ut faucibus, nunc vitae lacinia semper, leo
+                nisi auctor leo, id bibendum eros lacus at felis. Curabitur et urna vitae urna volutpat accumsan.
+                Praesent eu diam quis est consequat tristique vel nec sem. Suspendisse feugiat eros a tellus luctus
+                imperdiet. Mauris ut sem sed nibh rhoncus consequat condimentum nec massa. Aliquam consequat sem vel
+                ipsum sollicitudin porta. Integer pellentesque nulla non dignissim congue. Maecenas ut orci finibus,
+                tristique ipsum non, rutrum ex.
+            </p>
+        </section>
+        <section>
+            <h2>Publications</h2>
+        </section>
+        <section>
+            <h2>Recent News</h2>
+        </section>
+        <section>
+            <h2>Social Media</h2>
+            <div id="two-things">
+                <a class="twitter-timeline tw-align-left" data-width="750" data-height="500"
+                    href="https://twitter.com/WoodsonCubesat?ref_src=twsrc%5Etfw">Tweets by WoodsonCubesat</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <figure data-behold-id="jk9y5Gw9UuRnjrySYyfx"></figure>
+                <script src="https://w.behold.so/widget.js" type="module"></script>
+            </div>
+        </section>
         <button onclick="scrollToTop()" id="myBtn" class="btn btn-dark" title="Go to the top">^</button>
     </main>
     <footer>
+        <hr>
         <!--Social Media Links-->
         <div id="two-things">
             <div>
-            <a href="https://www.instagram.com/wtw.cubesat/" target="_blank">
-            <img src="assets/5282544_camera_instagram_social media_social network_instagram logo_icon.png" alt="WTW CubeSat Club Insta" style="width:50px;height:50px;">
-            </a>
-            <a href="https://twitter.com/WoodsonCubesat?s=20" target="_blank">
-            <img src="assets/5282551_tweet_twitter_twitter logo_icon.png" alt="WTW CubeSat Club Twitter" style="width:50px;height:50px;">
-            </a>
+                <a href="https://www.instagram.com/wtw.cubesat/" target="_blank">
+                    <img src="assets/InstagramLogo.png" alt="WTW CubeSat Club Insta" style="width:50px;height:50px;">
+                </a>
+                <a href="https://twitter.com/WoodsonCubesat?s=20" target="_blank">
+                    <img src="assets/TwitterLogo.png" alt="WTW CubeSat Club Twitter" style="width:50px;height:50px;">
+                </a>
             </div>
             <div>
-            <a href="https://woodsonhs.fcps.edu/" target="_blank">
-            <button class="btn btn-dark">🏫</button>
-            </a>
-            <a href="mailto:embabcock@fcps.edu" target="_blank">
-            <button class="btn btn-dark">✉️</button>
-            </a>
+                <a href="https://woodsonhs.fcps.edu/" target="_blank">
+                    <button class="btn btn-dark">🏫</button>
+                </a>
+                <a href="mailto:embabcock@fcps.edu" target="_blank">
+                    <button class="btn btn-dark">✉️</button>
+                </a>
             </div>
         </div>
         <!--Current Website version and copyright notice-->
         <div id="two-things">
-            <p>Established 2023 | Made with ♥️ by the website subteam</p><p>Copyright © 2023 W.T. Woodson HS CubeSat Club | All rights reserved</p>
+            <p>Established 2023 | Made with ♥️ by the website subteam</p>
+            <p>Copyright © 2023 W.T. Woodson HS CubeSat Club | All rights reserved</p>
         </div>
     </footer>
 </body>
+
 </html>

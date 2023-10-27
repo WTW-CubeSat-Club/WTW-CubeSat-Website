@@ -1,3 +1,10 @@
+:root {
+    --theme-red: #ec1c24;
+    --theme-blue: #000058;
+    --theme-white: #ffffff;
+    --header-height: 80px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,65 +14,61 @@
     text-decoration: none;
 }
 
-footer {
-    text-align: center;
-}
-
-main {
-    margin-top: 80px;
-}
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 body {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template: var(--header-height) auto auto / 1fr;
+    place-items: center;
 }
 
-nav {
-    background: linear-gradient(to right, #ec1c24, #000058);
-    height: 80px;
-    width: 100%;
+header {
     position: fixed;
-    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    background: linear-gradient(to right, var(--theme-red), var(--theme-blue));
     z-index: 999999;
+    top: 0;
 }
 
-nav a img {
-    height: 80px;
-    top: 50px;
-    vertical-align: top;
-    background-color: #ffffff;
-    border-radius: 5px;
+header div {
+    display: grid;
+    grid-template: 1fr / repeat(5, auto);
+    place-items: center;
 }
 
-label.logo {
+header div img {
+    height: var(--header-height);
+    background-color: var(--theme-white);
+}
+
+header div h1 {
     color: white;
     font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
     font-weight: bold;
 }
 
-nav ul {
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a {
+header div nav a {
     color: white;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
 }
 
-nav ul li a.active, nav ul li a:hover {
+header div nav a.active,
+header div nav a:hover {
     background: cornflowerblue;
     transition: .5s;
+}
+
+main {
+    width: 80%;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
 }
 
 .checkbtn {
@@ -125,12 +128,13 @@ nav ul li a.active, nav ul li a:hover {
         font-size: 20px;
     }
 
-    a:hover, a.active {
+    a:hover,
+    a.active {
         background: none;
         color: cornflowerblue;
     }
 
-    #check:checked ~ ul {
+    #check:checked~ul {
         left: 0;
     }
 }
