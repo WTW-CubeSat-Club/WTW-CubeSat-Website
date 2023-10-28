@@ -4,12 +4,6 @@
 {
     const icons = new Map([
         [document.querySelector('img#logo'), 'CubeSatIcon'],
-        [document.querySelector('img#insta-icon'), 'InstagramIcon'],
-        [document.querySelector('img#twitter-icon'), 'TwitterIcon'],
-        [document.querySelector('img#github-icon'), 'GithubIcon'],
-        [document.querySelector('img#school-icon'), 'SchoolIcon'],
-        [document.querySelector('img#mail-icon'), 'MailIcon'],
-        [document.querySelector('img#rocket-icon'), 'RocketTopIcon'],
     ]);
 
     const swapStyle = isLight => {

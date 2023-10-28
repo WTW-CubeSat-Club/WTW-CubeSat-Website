@@ -4,7 +4,35 @@ body {
 
 header {
     background: linear-gradient(to right, var(--theme-purple), var(--theme-blue));
-    /* background: var(--theme-blue); */
+}
+
+header>div#header-wrapper>div.header-box>#light-switch-wrapper>#slider:before {
+    content: "";
+    background: url("assets/MoonIcon.svg") no-repeat center center / cover;
+}
+
+footer a#insta-icon {
+    background: url("assets/InstagramIconWhite.svg") no-repeat center center / cover;
+}
+
+footer a#twitter-icon {
+    background: url("assets/TwitterIconWhite.svg") no-repeat center center / cover;
+}
+
+footer a#github-icon {
+    background: url("assets/GithubIconWhite.svg") no-repeat center center / cover;
+}
+
+footer a#school-icon {
+    background: url("assets/SchoolIconWhite.svg") no-repeat center center / cover;
+}
+
+footer a#mail-icon {
+    background: url("assets/MailIconWhite.svg") no-repeat center center / cover;
+}
+
+#scroll-button {
+    background: url("assets/RocketTopIconWhite.svg") no-repeat center center / cover;
 }
 
 h1,
@@ -20,8 +48,4 @@ p,
 span,
 small {
     color: var(--theme-off-white);
-}
-
-hr {
-    background-color: var(--theme-off-white);
 }

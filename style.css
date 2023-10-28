@@ -137,7 +137,7 @@ header>div#header-wrapper>div.header-box>#light-switch-wrapper>#slider:before {
     width: 1em;
     left: 0.25em;
     top: 0.25em;
-    background-color: var(--theme-white);
+    background: url("assets/SunIcon.svg") no-repeat center center / cover;
     transition: var(--theme-time);
     border-radius: 50%;
 }
@@ -168,6 +168,9 @@ main>section>#social-media-gallery {
 }
 
 footer {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid var(--theme-off-white);
     text-align: center;
     width: 80%;
 }
@@ -179,7 +182,8 @@ footer>.footer-pair {
     margin-bottom: 20px;
 }
 
-footer img {
+footer a {
+    display: block;
     width: 50px;
     height: 50px;
 }
@@ -188,8 +192,32 @@ footer a:hover {
     text-decoration: none;
 }
 
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+footer a#insta-icon {
+    background: url("assets/InstagramIcon.svg") no-repeat center center / cover;
+}
+
+footer a#twitter-icon {
+    background: url("assets/TwitterIcon.svg") no-repeat center center / cover;
+}
+
+footer a#github-icon {
+    background: url("assets/GithubIcon.svg") no-repeat center center / cover;
+}
+
+footer a#school-icon {
+    background: url("assets/SchoolIcon.svg") no-repeat center center / cover;
+}
+
+footer a#mail-icon {
+    background: url("assets/MailIcon.svg") no-repeat center center / cover;
+}
+
 #scroll-button {
-    visibility: hidden;
     display: none;
     position: fixed;
     bottom: 2em;
@@ -198,15 +226,9 @@ footer a:hover {
     width: 3em;
     height: 3em;
     border-radius: 50%;
-}
-
-#scroll-button>img#rocket-icon {
-    visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: inherit;
-    height: inherit;
+    outline: none;
+    border: none;
+    background: url("assets/RocketTopIcon.svg") no-repeat center center / cover;
 }
 
 h1,

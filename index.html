@@ -8,8 +8,8 @@
     <title>WTW CubeSat</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-    <!-- External Style Sheet for Default Mode (Dark) -->
     <link rel="stylesheet" href="style.css">
+    <!-- External Style Sheet for Default Mode (Dark) -->
     <!-- TODO: Make dark the default stylesheet -->
     <link id="mystylesheet" rel="stylesheet" type="text/css" href="darkmode.css">
     <!-- Bootstrap for mobile support and customization -->
@@ -30,14 +30,17 @@
                 <h1>WTW CubeSat</h1>
                 <nav>
                     <a class="active" href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="portfolio.html">Data</a>
+                    <!-- <a href="">About</a> -->
+                    <a href="">Data</a>
                     <a href="">Join</a>
+                    <a href="">Outreach</a>
                     <a href="">Donate</a>
                 </nav>
             </div>
             <!-- TODO: Change this animation so that it lines up with everything else -->
-            <div class="header-box header-padding" style="justify-content: flex-end; align-items: center;">
+            <!-- <div class="header-box header-padding" style="justify-content: flex-end; align-items: center;"> -->
+            <div class="header-box header-padding" style="justify-content: flex-end; align-items: center;"
+                title="Turn on Dark Mode">
                 <label id="light-switch-wrapper">
                     <input type="checkbox" id="light-switch">
                     <span id="slider"></span>
@@ -180,43 +183,33 @@
         </section>
     </main>
     <footer>
-        <hr>
+        <!-- <hr> -->
+        <!-- TODO: Add an act of recourse if the images fail to load -->
         <!-- TODO: Make icons consistent with one another -->
         <div class="footer-pair">
             <!-- Social Media Links -->
-            <div>
-                <a href="https://www.instagram.com/wtw.cubesat/" target="_blank" rel="noopener noreferrer">
-                    <img id="insta-icon" src="assets/InstagramIconWhite.svg" alt="WTW CubeSat Club Instagram">
-                </a>
-                <a href="https://twitter.com/WoodsonCubesat?s=20" target="_blank" rel="noopener noreferrer">
-                    <img id="twitter-icon" src="assets/TwitterIconWhite.svg" alt="WTW CubeSat Club Twitter">
-                </a>
-                <a href="https://github.com/WTW-CubeSat-Club" target="_blank" rel="noopener noreferrer">
-                    <img id="github-icon" src="assets/GithubIconWhite.svg" alt="WTW CubeSat Club Github">
-                </a>
+            <div style="display: flex; gap: 10px;">
+                <a id="insta-icon" title="WTW CubeSat Instagram" href="https://www.instagram.com/wtw.cubesat/"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a id="twitter-icon" title="WTW CubeSat Twitter" href="https://twitter.com/WoodsonCubesat?s=20"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a id="github-icon" title="WTW CubeSat Github" href="https://github.com/WTW-CubeSat-Club"
+                    target="_blank" rel="noopener noreferrer"></a>
             </div>
-            <div>
-                <a href="https://woodsonhs.fcps.edu/" target="_blank" rel="noopener noreferrer">
-                    <img id="school-icon" src="assets/SchoolIconWhite.svg" alt="Woodson High School Website">
-                </a>
-                <a href="mailto:embabcock@fcps.edu" target="_blank" rel="noopener noreferrer">
-                    <img id="mail-icon" src="assets/MailIconWhite.svg" alt="WTW CubeSat Club Email">
-                </a>
+            <div style="display: flex; gap: 10px;">
+                <a id="school-icon" title="W.T.&nbsp;Woodson&nbsp;HS Website" href="https://woodsonhs.fcps.edu/"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a id="mail-icon" title="WTW CubeSat Email" href="mailto:embabcock@fcps.edu" target="_blank"
+                    rel="noopener noreferrer"></a>
             </div>
         </div>
         <!-- Current Website version and copyright notice -->
         <div class="footer-pair">
-            <p>Established 2023 | Made with ♥️ by the website subteam</p>
+            <p>Established 2023 | Made with ♥️ by the Website Subteam</p>
             <p>Copyright © 2023 W.T. Woodson HS CubeSat Club | All rights reserved</p>
         </div>
     </footer>
-    <!-- <button onclick="scrollToTop()" title="Scroll to top">
-        <img id="rocket-icon" src="RocketTopIconWhite.svg" alt="^">
-    </button> -->
-    <!-- <button onclick="scrollToTop()" id="scroll-button" title="Scroll to top">^</button> -->
-    <button onclick="scrollToTop()" id="scroll-button" title="Scroll to top">
-        <img id="rocket-icon" src="assets/RocketTopIconWhite.svg" alt="^">
-    </button>
+    <button onclick="scrollToTop()" id="scroll-button" title="Scroll to top"></button>
 </body>
 
 </html>
