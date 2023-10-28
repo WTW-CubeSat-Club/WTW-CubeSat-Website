@@ -1,25 +1,35 @@
-// TODO: Refactor this in TypeScript
+// TODO: Refactor in TypeScript
 
-const swapStyle =
-    sheet => localStorage.setItem('theme', document.querySelector('link#mystylesheet').href = sheet);
+const logo = document.querySelector('img#logo');
+const instaLogo = document.querySelector('img#insta-logo');
+const twitterLogo = document.querySelector('img#twitter-logo');
 
-const setTheme = localStorage.getItem('theme');
+const swapStyle = isLight => {
+    logo.src = isLight ? 'assets/CubeSatLogoInverse.svg' : 'assets/CubeSatLogoWhite.svg';
+    instaLogo.src = isLight ? 'assets/InstagramLogo.svg' : 'assets/InstagramLogoWhite.svg';
+    twitterLogo.src = isLight ? 'assets/TwitterLogo.svg' : 'assets/TwitterLogoWhite.svg';
 
-swapStyle(setTheme === null ? 'light.css' : setTheme);
+    document.querySelector('link#mystylesheet').href = isLight ? '' : 'darkmode.css';
+    localStorage.setItem('theme', isLight);
+};
+
+const isLight = localStorage.getItem('theme') == 'true';
+
+swapStyle(isLight);
 
 const lightSwitch = document.querySelector('input#light-switch');
-lightSwitch.addEventListener('change', () => swapStyle(lightSwitch.checked ? 'dark.css' : 'light.css'));
+lightSwitch.addEventListener('change', () => swapStyle(!lightSwitch.checked));
 
-if (setTheme !== 'light.css') {
+if (!isLight) {
     lightSwitch.checked = true;
 }
 
 // Get the button
-const myButton = document.getElementById('myBtn');
+const scrollButton = document.querySelector('button#scroll-button');
 
 // When the user scrolls down 500px from the top of the document, show the button
 window.onscroll =
-    () => myButton.style.display = document.body.scrollTop > 500 || document.documentElement.scrollTop > 500
+    () => scrollButton.style.display = document.body.scrollTop > 1_500 || document.documentElement.scrollTop > 1_500
         ? 'block'
         : 'none';
 

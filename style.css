@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 :root {
     --theme-red: #ec1c24;
     --theme-blue: #000058;
     --theme-white: #ffffff;
+    --theme-black: #000000;
+    --theme-off-black: #888888;
+    --theme-off-white: #eaeaea;
+    --theme-dark-grey: #24292e;
+    --theme-light-grey: #bfbfbf;
+    --theme-purple: #400080;
     --header-height: 50px;
     --main-width: 800px;
     --theme-time: 0.5s;
@@ -16,13 +24,16 @@
     text-decoration: none;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: var(--theme-time);
 }
 
 header {
@@ -165,4 +176,51 @@ footer>.footer-pair {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+}
+
+#scroll-button {
+    display: none;
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+    z-index: 99;
+    font-size: 18px;
+    cursor: pointer;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: var(--theme-time);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--theme-black);
+}
+
+p,
+span,
+small {
+    color: var(--theme-off-black);
+}
+
+#scroll-button {
+    background-color: var(--theme-blue);
+    color: var(--theme-white);
+}
+
+#scroll-button:hover {
+    /* TODO: Figure out what's happeneing with the border */
+    border: 3px solid var(--theme-blue);
+    color: var(--theme-blue);
+    background-color: transparent;
+}
+
+a:hover {
+    text-decoration: unset;
 }

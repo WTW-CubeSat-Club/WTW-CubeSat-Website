@@ -1,0 +1,43 @@
+body {
+    background-color: var(--theme-dark-grey) !important;
+}
+
+header {
+    background: linear-gradient(to right, var(--theme-purple), var(--theme-blue));
+    /* background: var(--theme-blue); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--theme-white);
+}
+
+p,
+span,
+small {
+    color: var(--theme-off-white);
+}
+
+hr {
+    background-color: var(--theme-off-white);
+}
+
+#scroll-button {
+    background-color: var(--theme-light-grey);
+    color: var(--theme-white) !important;
+}
+
+#scroll-button:hover {
+    /* TODO: Figure out what's happeneing with the border */
+    border: 3px solid var(--theme-light-grey);
+    background-color: transparent;
+}
+
+a {
+    /* TODO: Figure out how to remove underline */
+    text-decoration: none;
+}
