@@ -1,12 +1,21 @@
+// TODO: Refactor this in TypeScript
+
 const swapStyle =
     sheet => localStorage.setItem('theme', document.querySelector('link#mystylesheet').href = sheet);
 
 const setTheme = localStorage.getItem('theme');
 
-swapStyle(setTheme == null ? 'light.css' : setTheme);
+swapStyle(setTheme === null ? 'light.css' : setTheme);
+
+const lightSwitch = document.querySelector('input#light-switch');
+lightSwitch.addEventListener('change', () => swapStyle(lightSwitch.checked ? 'dark.css' : 'light.css'));
+
+if (setTheme !== 'light.css') {
+    lightSwitch.checked = true;
+}
 
 // Get the button
-const myButton = document.getElementById("myBtn");
+const myButton = document.getElementById('myBtn');
 
 // When the user scrolls down 500px from the top of the document, show the button
 window.onscroll =
