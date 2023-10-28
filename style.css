@@ -8,7 +8,6 @@
     --theme-off-black: #888888;
     --theme-off-white: #eaeaea;
     --theme-dark-grey: #24292e;
-    --theme-light-grey: #bfbfbf;
     --theme-purple: #400080;
     --header-height: 50px;
     --main-width: 800px;
@@ -34,6 +33,7 @@ body {
     flex-direction: column;
     align-items: center;
     transition: var(--theme-time);
+    background-color: var(--theme-white) !important;
 }
 
 header {
@@ -43,6 +43,7 @@ header {
     background: linear-gradient(to right, var(--theme-red), var(--theme-blue));
     z-index: 999999;
     top: 0;
+    transition: var(--theme-time);
 }
 
 header>div#header-wrapper {
@@ -178,20 +179,34 @@ footer>.footer-pair {
     margin-bottom: 20px;
 }
 
+footer img {
+    width: 50px;
+    height: 50px;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
 #scroll-button {
+    visibility: hidden;
     display: none;
     position: fixed;
     bottom: 2em;
     right: 3em;
     z-index: 99;
-    font-size: 18px;
-    cursor: pointer;
     width: 3em;
     height: 3em;
     border-radius: 50%;
-    border: none;
-    outline: none;
-    transition: var(--theme-time);
+}
+
+#scroll-button>img#rocket-icon {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
 }
 
 h1,
@@ -207,20 +222,4 @@ p,
 span,
 small {
     color: var(--theme-off-black);
-}
-
-#scroll-button {
-    background-color: var(--theme-blue);
-    color: var(--theme-white);
-}
-
-#scroll-button:hover {
-    /* TODO: Figure out what's happeneing with the border */
-    border: 3px solid var(--theme-blue);
-    color: var(--theme-blue);
-    background-color: transparent;
-}
-
-a:hover {
-    text-decoration: unset;
 }
