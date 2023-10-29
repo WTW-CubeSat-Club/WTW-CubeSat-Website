@@ -21,6 +21,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+    transition: var(--theme-time);
 }
 
 html {
@@ -61,8 +62,12 @@ header>div#header-wrapper>div.header-box.header-padding {
     flex: 1;
 }
 
-header>div#header-wrapper>div.header-box>a>img {
+header a#logo {
+    transition: var(--theme-time);
+    /* TODO: Make the width dynamic */
+    width: calc(850 / 700 * var(--header-height));
     height: var(--header-height);
+    background: url("assets/icons/light/CubeSat.svg") no-repeat center center / cover;
 }
 
 header>div#header-wrapper>div#title-wrapper {
@@ -137,7 +142,7 @@ header>div#header-wrapper>div.header-box>#light-switch-wrapper>#slider:before {
     width: 1em;
     left: 0.25em;
     top: 0.25em;
-    background: url("assets/SunIcon.svg") no-repeat center center / cover;
+    background: url("assets/icons/light/Sun.svg") no-repeat center center / cover;
     transition: var(--theme-time);
     border-radius: 50%;
 }
@@ -146,13 +151,13 @@ header>div#header-wrapper>div.header-box>#light-switch-wrapper>input#light-switc
     transform: translateX(1.5em);
 }
 
-#header-filler {
+span#header-filler {
     height: var(--header-height);
 }
 
 main {
-    margin-top: 1em;
-    width: var(--main-width);
+    margin: 1em 0;
+    max-width: var(--main-width);
 }
 
 main>section>p {
@@ -168,7 +173,6 @@ main>section>#social-media-gallery {
 }
 
 footer {
-    margin-top: 1em;
     padding-top: 1em;
     border-top: 1px solid var(--theme-off-white);
     text-align: center;
@@ -198,23 +202,23 @@ footer img {
 }
 
 footer a#insta-icon {
-    background: url("assets/InstagramIcon.svg") no-repeat center center / cover;
+    background: url("assets/icons/light/Instagram.svg") no-repeat center center / cover;
 }
 
 footer a#twitter-icon {
-    background: url("assets/TwitterIcon.svg") no-repeat center center / cover;
+    background: url("assets/icons/light/Twitter.svg") no-repeat center center / cover;
 }
 
 footer a#github-icon {
-    background: url("assets/GithubIcon.svg") no-repeat center center / cover;
+    background: url("assets/icons/light/Github.svg") no-repeat center center / cover;
 }
 
 footer a#school-icon {
-    background: url("assets/SchoolIcon.svg") no-repeat center center / cover;
+    background: url("assets/icons/light/School.svg") no-repeat center center / cover;
 }
 
 footer a#mail-icon {
-    background: url("assets/MailIcon.svg") no-repeat center center / cover;
+    background: url("assets/icons/light/Mail.svg") no-repeat center center / cover;
 }
 
 #scroll-button {
@@ -228,7 +232,7 @@ footer a#mail-icon {
     border-radius: 50%;
     outline: none;
     border: none;
-    background: url("assets/RocketTopIcon.svg") no-repeat center center / cover;
+    background: url("assets/icons/light/Rocket.svg") no-repeat center center / cover;
 }
 
 h1,

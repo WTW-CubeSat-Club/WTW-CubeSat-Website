@@ -2,16 +2,26 @@
 
 // Lightness Mode
 {
-    const icons = new Map([
-        [document.querySelector('img#logo'), 'CubeSatIcon'],
-    ]);
-
     const swapStyle = isLight => {
-        for (const [key, value] of icons) {
-            key.src = `assets/${value + (isLight ? '' : 'White')}.svg`;
+        document.querySelector('label#light-switch-wrapper').title = `Turn on ${isLight ? 'Dark' : 'Light'} Mode`;
+
+        // document.querySelector('a.twitter-timeline').setAttribute('data-theme', isLight ? 'light' : 'dark');
+
+        // TODO: Make darkmode the default stylesheet
+        if (isLight) {
+            if (document.querySelector('link#dark-stylesheet')) {
+                document.querySelector('head').removeChild(document.querySelector('link#dark-stylesheet'));
+            }
+        } else {
+            const node = document.createElement('link');
+            node.id = 'dark-stylesheet';
+            node.rel = 'stylesheet';
+            node.type = 'text/css';
+            node.href = 'darkmode.css';
+
+            document.querySelector('head').appendChild(node);
         }
 
-        document.querySelector('link#mystylesheet').href = isLight ? '' : 'darkmode.css'; // TODO: Maybe the node should be deleted instead
         localStorage.setItem('theme', isLight);
     };
 
