@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
-<!--©, 2023, W.T. Woodson HS CubeSat Club.-->
+<!-- © 2023, W.T. Woodson HS CubeSat Club. -->
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="About WTW CubeSat Club" content="W.T. Woodson HS is building a 1 unit satelite">
     <title>W.T. Woodson HS CubeSat Club</title>
@@ -15,106 +15,55 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!--animate.css import-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  </head>
-  <body>
+    <!--Script for light and dark theme + console storage-->
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
     <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-      </label>
-      <a href="index.html">
-        <img src="CubeSat Logo 2.png" alt="WTW CubeSat Club Logo" style="width:85px;height:85px;top:50px;vertical-align: top;">
-      </a>
-      <!--<label class="logo">.</label> - Not needed for now-->
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <!--Dark/Light info and options-->
-        <button class="btn btn-light" onclick="swapStyle('light.css')">☀️</button>
-        <button class="btn btn-dark" onclick="swapStyle('dark.css')">🌙</button>
-      </ul>
+        <a href="index.html"><img src="assets/CubeSatLogo.png" alt="WTW CubeSat Club Logo" style="width:85px;height:85px;top:50px;vertical-align: top;"></a>
+        <!--<label class="logo">.</label> - Not needed for now-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <!--Dark/Light info and options-->
+            <button class="btn btn-light" onclick="swapStyle('light.css')">☀️</button>
+            <button class="btn btn-dark" onclick="swapStyle('dark.css')">🌙</button>
+        </ul>
     </nav>
     <main>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <hr>
-      <button onclick="topFunction()" id="myBtn" class="btn btn-dark" title="Go to the top">^</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <button onclick="topFunction()" id="myBtn" class="btn btn-dark" title="Go to the top">^</button>
     </main>
-    <!--Script for light and dark theme + console storage-->
-    <script type="text/javascript">
-      var setTheme = localStorage.getItem('theme')
-      console.log('theme:', setTheme)
-  
-      if (setTheme == null){
-        swapStyle('light.css')
-      }else{
-        swapStyle(setTheme)
-      }
-  
-      function swapStyle(sheet){
-        document.getElementById('mystylesheet').href = sheet
-        localStorage.setItem('theme', sheet)
-      }
-      
-      var setTheme = localStorage.getItem('theme')
-      if (setTheme == null){
-        swapStyles('light.css')
-      }else{
-        swapStyles(setTheme)
-      }
-        
-      function swapStyles(sheet){
-        document.getElementById('mystylesheet').href = sheet
-        localStorage.setItem('theme', sheet)
-      }
-      // Get the button
-      let mybutton = document.getElementById("myBtn");
-
-      // When the user scrolls down 500px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-  </body>
-  <footer>
-    <!--Social Media Links-->
-    <div id="two-things">
-      <div>
-      <a href="https://www.instagram.com/wtw.cubesat/" target="_blank">
-        <img src="5282544_camera_instagram_social media_social network_instagram logo_icon.png" alt="WTW CubeSat Club Insta" style="width:50px;height:50px;">
-      </a>
-      <a href="https://twitter.com/WoodsonCubesat?s=20" target="_blank">
-        <img src="5282551_tweet_twitter_twitter logo_icon.png" alt="WTW CubeSat Club Twitter" style="width:50px;height:50px;">
-      </a>
-      </div>
-      <div>
-        <a href="https://woodsonhs.fcps.edu/" target="_blank">
-        <button class="btn btn-dark">🏫</button>
-        </a>
-        <a href="mailto:embabcock@fcps.edu" target="_blank">
-        <button class="btn btn-dark">✉️</button>
-        </a>
-      </div>
-    </div>
-    <!--Current Website version and copyright notice-->
-    <div id="two-things">
-    <p>Established 2023 | Made with ♥️ by the website subteam</p><p>Copyright © 2023 W.T. Woodson HS CubeSat Club | All rights reserved</p>
-    </div>
-  </footer>
+    <footer>
+        <!--Social Media Links-->
+        <div id="two-things">
+            <div>
+                <a href="https://www.instagram.com/wtw.cubesat/" target="_blank">
+                    <img src="assets/5282544_camera_instagram_social media_social network_instagram logo_icon.png" alt="WTW CubeSat Club Insta" style="width:50px;height:50px;">
+                </a>
+                <a href="https://twitter.com/WoodsonCubesat?s=20" target="_blank">
+                    <img src="assets/5282551_tweet_twitter_twitter logo_icon.png" alt="WTW CubeSat Club Twitter" style="width:50px;height:50px;">
+                </a>
+            </div>
+            <div>
+                <a href="https://woodsonhs.fcps.edu/" target="_blank">
+                    <button class="btn btn-dark">🏫</button>
+                </a>
+                <a href="mailto:embabcock@fcps.edu" target="_blank">
+                    <button class="btn btn-dark">✉️</button>
+                </a>
+            </div>
+        </div>
+        <!--Current Website version and copyright notice-->
+        <div id="two-things">
+            <p>Established 2023 | Made with ♥️ by the website subteam</p><p>Copyright © 2023 W.T. Woodson HS CubeSat Club | All rights reserved</p>
+        </div>
+    </footer>
+</body>
 </html>
