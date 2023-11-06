@@ -1,28 +1,190 @@
+<!-- © 2023, W.T. Woodson HS CubeSat Club. -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="WTW CubeSat" content="W.T. Woodson HS is building a 1 unit satelite">
     <title>WTW CubeSat</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <!-- Bootstrap for mobile support and customization -->
+    <!-- TODO: Get off Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Script for light and dark theme and console storage -->
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
+
 <body>
-    <p>WTW CUBESAT CLUB: Mission Statement</p>
-</body>
     <header>
+        <div id="header-wrapper">
+            <div class="header-box header-padding">
+                <a id="logo" href="index.html" title="WTW CubeSat"></a>
+            </div>
+            <div class="header-box" id="title-wrapper">
+                <h1>WTW CubeSat</h1>
+                <nav>
+                    <a class="active" href="index.html">Home</a>
+                    <!-- <a href="">About</a> -->
+                    <a href="">Data</a>
+                    <a href="">Join</a>
+                    <a href="">Outreach</a>
+                    <a href="">Donate</a>
+                </nav>
+            </div>
+            <!-- TODO: Change this animation so that it lines up with everything else -->
+            <!-- <div class="header-box header-padding" style="justify-content: flex-end; align-items: center;"> -->
+            <div class="header-box header-padding" style="justify-content: flex-end; align-items: center;">
+                <label id="light-switch-wrapper">
+                    <input type="checkbox" id="light-switch">
+                    <span id="slider"></span>
+                </label>
+            </div>
+        </div>
     </header>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo">CubeSatLogo</label>
-      <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-      </ul>
-    </nav>
+    <!-- Temporary TODO: Remove this -->
+    <span id="header-filler"></span>
+    <main>
+        <section>
+            <h2>Welcome!</h2>
+            <p>Our mission at the W.T. Woodson CubeSat Club is to enhance and further our knowledge of outer space, and
+                to provide others with opportunities to assist with our goal of space exploration. We commit ourselves
+                to the values of respect, responsibility, teamwork, collaboration, and integrity through the means of
+                our actions, words, and work ethic. We seek to inquire about innovative ideas to share amongst others;
+                and that we can utilize this gained knowledge to benefit our awareness of the miraculous world that
+                encompasses us.</p>
+        </section>
+        <section>
+            <h2>Project Overview</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Pellentesque id nibh tortor id aliquet. Sollicitudin nibh sit amet commodo nulla
+                facilisi nullam. Congue eu consequat ac felis donec. Imperdiet dui accumsan sit amet nulla facilisi
+                morbi tempus iaculis. Lorem ipsum dolor sit amet consectetur adipiscing elit. Ipsum suspendisse ultrices
+                gravida dictum fusce ut. Eros in cursus turpis massa tincidunt dui ut ornare. Pharetra magna ac placerat
+                vestibulum lectus mauris ultrices eros in. Pellentesque diam volutpat commodo sed egestas. Nisl rhoncus
+                mattis rhoncus urna. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Elementum
+                pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Senectus et netus et malesuada
+                fames ac turpis egestas sed. Aliquam sem fringilla ut morbi. Dui sapien eget mi proin sed libero enim
+                sed faucibus. Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Pulvinar sapien
+                et ligula ullamcorper malesuada proin libero. Enim ut tellus elementum sagittis.</p>
+            <p>In pellentesque massa placerat duis ultricies lacus sed. Et malesuada fames ac turpis egestas maecenas
+                pharetra convallis posuere. Sem nulla pharetra diam sit amet. Eget duis at tellus at urna condimentum.
+                Tellus in hac habitasse platea dictumst. Elementum eu facilisis sed odio morbi. Non nisi est sit amet
+                facilisis. Purus ut faucibus pulvinar elementum integer enim. Eget mi proin sed libero. Lectus sit amet
+                est placerat in. Nisi quis eleifend quam adipiscing vitae proin sagittis. Consequat id porta nibh
+                venenatis cras sed felis eget. A pellentesque sit amet porttitor eget dolor morbi. Id aliquet risus
+                feugiat in ante metus dictum at tempor. Dolor sed viverra ipsum nunc aliquet. Vel pretium lectus quam
+                id.</p>
+            <p>Amet tellus cras adipiscing enim eu turpis egestas pretium. Pretium vulputate sapien nec sagittis aliquam
+                malesuada bibendum arcu vitae. Blandit aliquam etiam erat velit scelerisque. Rutrum tellus pellentesque
+                eu tincidunt tortor. Enim eu turpis egestas pretium aenean pharetra magna ac placerat. Vulputate odio ut
+                enim blandit volutpat maecenas volutpat blandit aliquam. Commodo viverra maecenas accumsan lacus vel
+                facilisis volutpat est. Pharetra sit amet aliquam id diam maecenas ultricies. At in tellus integer
+                feugiat scelerisque varius. Bibendum at varius vel pharetra vel turpis. Sodales neque sodales ut etiam
+                sit amet.</p>
+            <p>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Maecenas accumsan
+                lacus vel facilisis volutpat est velit. Semper eget duis at tellus at urna condimentum. Sagittis aliquam
+                malesuada bibendum arcu vitae elementum. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin
+                gravida. Libero volutpat sed cras ornare arcu. Elit pellentesque habitant morbi tristique. Congue nisi
+                vitae suscipit tellus mauris. Habitant morbi tristique senectus et netus et malesuada fames ac. Tortor
+                pretium viverra suspendisse potenti nullam ac tortor.</p>
+            <p>Habitant morbi tristique senectus et netus et malesuada. Cras fermentum odio eu feugiat pretium nibh
+                ipsum. Dolor sit amet consectetur adipiscing. Morbi tristique senectus et netus et malesuada fames ac
+                turpis. Diam maecenas ultricies mi eget mauris pharetra et ultrices. Lectus urna duis convallis
+                convallis. Fermentum iaculis eu non diam phasellus. Nibh venenatis cras sed felis eget velit aliquet.
+                Lacus luctus accumsan tortor posuere ac ut consequat semper. Phasellus egestas tellus rutrum tellus
+                pellentesque eu tincidunt tortor aliquam.</p>
+            <p>Nibh cras pulvinar mattis nunc sed. Varius sit amet mattis vulputate enim nulla aliquet. Suspendisse
+                interdum consectetur libero id faucibus nisl tincidunt. Duis ultricies lacus sed turpis tincidunt id
+                aliquet risus feugiat. Faucibus in ornare quam viverra orci sagittis. Odio eu feugiat pretium nibh
+                ipsum. Molestie ac feugiat sed lectus. Pellentesque adipiscing commodo elit at imperdiet dui accumsan
+                sit. Quisque non tellus orci ac auctor augue mauris. Scelerisque mauris pellentesque pulvinar
+                pellentesque habitant morbi tristique. Est ultricies integer quis auctor elit sed. Id aliquet risus
+                feugiat in ante metus dictum. Massa placerat duis ultricies lacus sed turpis tincidunt id. Tortor
+                dignissim convallis aenean et tortor at risus viverra adipiscing. Imperdiet sed euismod nisi porta
+                lorem.</p>
+            <p>Donec ac odio tempor orci dapibus ultrices. Vitae congue eu consequat ac felis. Aenean sed adipiscing
+                diam donec adipiscing tristique risus. Duis convallis convallis tellus id interdum velit laoreet id.
+                Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Diam maecenas ultricies mi eget
+                mauris pharetra et ultrices. Scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis.
+                Tristique sollicitudin nibh sit amet commodo. Sem nulla pharetra diam sit. Justo donec enim diam
+                vulputate ut pharetra sit amet aliquam. Vulputate mi sit amet mauris commodo. Lorem mollis aliquam ut
+                porttitor leo a diam. Sed turpis tincidunt id aliquet risus feugiat in. Donec massa sapien faucibus et
+                molestie ac feugiat sed. Id consectetur purus ut faucibus pulvinar elementum integer enim neque.</p>
+            <p>Scelerisque felis imperdiet proin fermentum leo vel orci porta. Libero volutpat sed cras ornare arcu.
+                Tristique senectus et netus et malesuada. Sit amet facilisis magna etiam tempor orci eu lobortis. Ut
+                lectus arcu bibendum at varius vel pharetra vel. Venenatis a condimentum vitae sapien pellentesque
+                habitant morbi tristique senectus. Platea dictumst quisque sagittis purus sit amet volutpat. Sem integer
+                vitae justo eget magna fermentum iaculis. Cras pulvinar mattis nunc sed. Consectetur lorem donec massa
+                sapien faucibus et molestie ac. A diam maecenas sed enim. Arcu ac tortor dignissim convallis aenean et.
+                Curabitur gravida arcu ac tortor. Malesuada bibendum arcu vitae elementum.</p>
+            <p>Tellus orci ac auctor augue mauris augue neque gravida. Adipiscing bibendum est ultricies integer quis
+                auctor elit. Augue eget arcu dictum varius duis at consectetur. Fames ac turpis egestas integer eget
+                aliquet. In cursus turpis massa tincidunt. Fames ac turpis egestas sed tempus urna. Cras pulvinar mattis
+                nunc sed blandit libero volutpat sed. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada
+                proin libero. Pharetra massa massa ultricies mi quis hendrerit dolor magna. Nascetur ridiculus mus
+                mauris vitae ultricies leo. Sagittis id consectetur purus ut faucibus pulvinar elementum integer.</p>
+            <p>Venenatis urna cursus eget nunc scelerisque viverra mauris in. Nibh mauris cursus mattis molestie a
+                iaculis at erat. Amet facilisis magna etiam tempor orci eu. Tempor nec feugiat nisl pretium fusce id.
+                Tincidunt dui ut ornare lectus sit. Sed ullamcorper morbi tincidunt ornare massa eget egestas purus
+                viverra. Amet massa vitae tortor condimentum lacinia quis vel eros. Turpis cursus in hac habitasse
+                platea dictumst quisque sagittis purus. Leo duis ut diam quam nulla porttitor massa. Amet justo donec
+                enim diam. Aenean et tortor at risus viverra adipiscing. Non tellus orci ac auctor augue mauris. Amet
+                aliquam id diam maecenas ultricies mi eget. Sit amet aliquam id diam maecenas ultricies mi eget. Vitae
+                congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.</p>
+        </section>
+        <section>
+            <h2>Publications</h2>
+        </section>
+        <section>
+            <h2>Recent News</h2>
+        </section>
+        <section>
+            <h2>Social Media</h2>
+            <div id="social-media-gallery">
+                <div style="width: 80%;">
+                    <figure data-behold-id="jk9y5Gw9UuRnjrySYyfx"></figure>
+                    <script src="https://w.behold.so/widget.js" type="module"></script>
+                </div>
+                <!-- TODO: Support darkmode -->
+                <!-- TODO: Update this; it's deprecated according to Twitter -->
+                <a class="twitter-timeline" data-width="800px" data-dnt="true" data-theme="light"
+                    href="https://twitter.com/WoodsonCubesat?ref_src=twsrc%5Etfw">Tweets by WoodsonCubesat</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- TODO: Add an act of recourse if the images fail to load -->
+        <!-- TODO: Make icons consistent with one another -->
+        <div class="footer-pair">
+            <!-- Social Media Links -->
+            <div style="display: flex; gap: 10px;">
+                <a id="insta-icon" title="WTW CubeSat Instagram" href="https://www.instagram.com/wtw.cubesat/"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a id="twitter-icon" title="WTW CubeSat Twitter" href="https://twitter.com/WoodsonCubesat?s=20"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a id="github-icon" title="WTW CubeSat Github" href="https://github.com/WTW-CubeSat-Club"
+                    target="_blank" rel="noopener noreferrer"></a>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <a id="school-icon" title="W.T.&nbsp;Woodson&nbsp;HS Website" href="https://woodsonhs.fcps.edu/"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a id="mail-icon" title="WTW CubeSat Email" href="mailto:embabcock@fcps.edu" target="_blank"
+                    rel="noopener noreferrer"></a>
+            </div>
+        </div>
+        <!-- Current Website version and copyright notice -->
+        <div class="footer-pair">
+            <!-- TODO: Make the pipes pseudo-elements -->
+            <p>Established 2023 | Made with ♥️ by the Website Subteam</p>
+            <p>Copyright © 2023 W.T. Woodson HS CubeSat Club | All rights reserved</p>
+        </div>
+    </footer>
+    <button onclick="scrollToTop()" id="scroll-button" title="Scroll to top"></button>
+</body>
+
 </html>
