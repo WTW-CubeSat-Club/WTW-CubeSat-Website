@@ -1,59 +1,20 @@
-// TODO: Refactor in TypeScript
+const swapStyle =
+    sheet => localStorage.setItem('theme', document.querySelector('link#mystylesheet').href = sheet);
 
-// Lightness Mode
-{
-    const swapStyle = isLight => {
-        document.querySelector('label#light-switch-wrapper').title = `Turn on ${isLight ? 'Dark' : 'Light'} Mode`;
+const setTheme = localStorage.getItem('theme');
+console.log('theme:', setTheme);
 
-        // document.querySelector('a.twitter-timeline').setAttribute('data-theme', isLight ? 'light' : 'dark');
+swapStyle(setTheme == null ? 'light.css' : setTheme);
 
-        // TODO: Make darkmode the default stylesheet
-        if (isLight) {
-            if (document.querySelector('link#dark-stylesheet')) {
-                document.querySelector('head').removeChild(document.querySelector('link#dark-stylesheet'));
-            }
-        } else {
-            const node = document.createElement('link');
-            node.id = 'dark-stylesheet';
-            node.rel = 'stylesheet';
-            node.type = 'text/css';
-            node.href = 'darkmode.css';
+// Get the button
+const myButton = document.getElementById("myBtn");
 
-            document.querySelector('head').appendChild(node);
-        }
-
-        localStorage.setItem('theme', isLight);
-    };
-
-    const isLight = localStorage.getItem('theme') == 'true';
-
-    swapStyle(isLight);
-
-    const lightSwitch = document.querySelector('input#light-switch');
-    lightSwitch.addEventListener('change', () => swapStyle(!lightSwitch.checked));
-
-    if (!isLight) {
-        lightSwitch.checked = true;
-    }
-}
-
-// Scroll button
+// When the user scrolls down 500px from the top of the document, show the button
+window.onscroll =
+    () => myButton.style.display = document.body.scrollTop > 500 || document.documentElement.scrollTop > 500
+        ? 'block'
+        : 'none';
 
 // When the user clicks on the button, scroll to the top of the document
 const scrollToTop =
     () => document.body.scrollTop = document.documentElement.scrollTop = 0;
-
-{
-    const scrollButton = document.querySelector('button#scroll-button');
-
-    // When the user scrolls down 500px from the top of the document, show the button
-
-    const showScrollButton =
-        () => scrollButton.style.display = document.body.scrollTop > 1_500 || document.documentElement.scrollTop > 1_500
-            ? 'block'
-            : 'none';
-
-    showScrollButton();
-
-    window.addEventListener('scroll', showScrollButton);
-}
