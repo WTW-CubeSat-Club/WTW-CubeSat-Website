@@ -47,13 +47,18 @@ const scrollToTop =
     const scrollButton = document.querySelector('button#scroll-button');
 
     // When the user scrolls down 500px from the top of the document, show the button
+    window.addEventListener('scroll', () => scrollButton.style.display = document.body.scrollTop > 1_500 || document.documentElement.scrollTop > 1_500
+        ? 'block'
+        : 'none');
+}
 
-    const showScrollButton =
-        () => scrollButton.style.display = document.body.scrollTop > 1_500 || document.documentElement.scrollTop > 1_500
-            ? 'block'
-            : 'none';
+// Header styling
+{
+    const header = document.querySelector('header');
 
-    showScrollButton();
-
-    window.addEventListener('scroll', showScrollButton);
+    window.addEventListener('scroll', () => {
+        // TODO: Make this depnedent on CSS variable
+        if (document.body.scrollTop <= 50 && document.documentElement.scrollTop <= 50) {
+        }
+    });
 }

@@ -42,7 +42,7 @@ header {
     width: 100%;
     height: var(--header-height);
     background: linear-gradient(to right, var(--theme-red), var(--theme-blue));
-    z-index: 999999;
+    z-index: 99;
     top: 0;
     transition: var(--theme-time);
 }
@@ -94,13 +94,13 @@ header nav>a {
     box-sizing: border-box;
     /* TODO: Make the padding take up all of the cell */
     padding: 10px 1em;
+    transition: var(--theme-time);
 }
 
 header nav>a:hover {
     background-color: var(--theme-white);
     color: black;
     mix-blend-mode: screen;
-    transition: var(--theme-time);
     text-decoration: none;
 }
 
@@ -151,8 +151,44 @@ header #light-switch-wrapper>input#light-switch:checked+#slider:before {
     transform: translateX(1.5em);
 }
 
-span#header-filler {
-    height: var(--header-height);
+div#hero {
+    display: grid;
+    place-items: center;
+    background: linear-gradient(#00000060, #00000060), url("assets/Hero.jpg") no-repeat center center / cover;
+    width: 100%;
+    height: 100vh;
+}
+
+div#hero div#mission-statement-wrapper {
+    width: 80%;
+}
+
+div#hero h1 {
+    color: var(--theme-white);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+div#hero p {
+    width: 50%;
+    color: var(--theme-white);
+}
+
+div#hero a#join {
+    border: 2px solid var(--theme-white);
+    padding: 0 0.5em;
+    background-color: transparent;
+    color: var(--theme-white);
+    font-size: 1.25rem;
+    transition: var(--theme-time);
+    text-decoration: none;
+}
+
+div#hero a#join:hover {
+    background-color: var(--theme-white);
+    color: black;
+    mix-blend-mode: screen;
+    cursor: pointer;
 }
 
 main {
@@ -160,7 +196,7 @@ main {
     max-width: var(--main-width);
 }
 
-main>section>p {
+main>section p {
     text-align: justify;
     text-justify: inter-word;
 }
