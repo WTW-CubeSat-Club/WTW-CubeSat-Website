@@ -1,0 +1,24 @@
+<!DOCTYPE xml>
+<website>
+    <home>
+        <mission-statement></mission-statement>
+        <faq></faq>
+        <bullitin></bullitin>
+        <join></join>
+    </home>
+    <about>
+        <meet-the-members></meet-the-members>
+        <cubesat-breakdown></cubesat-breakdown>
+        <timeline></timeline>
+    </about>
+    <data></data>
+    <contacts>
+        <socials></socials>
+        <sponsors></sponsors>
+        <donate></donate>
+        <emails></emails>
+        <socials></socials>
+        <github></github>
+        <outreach></outreach>
+    </contacts>
+</website>

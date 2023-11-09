@@ -10,7 +10,7 @@
     --theme-dark-grey: #24292e;
     --theme-purple: #400080;
     --header-height: 50px;
-    --main-width: 800px;
+    --main-width: 80%;
     --theme-time: 0.5s;
 }
 
@@ -47,18 +47,18 @@ header {
     transition: var(--theme-time);
 }
 
-header>div#header-wrapper {
+header div#header-wrapper {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-header>div#header-wrapper>div.header-box {
+header div#header-wrapper>div.header-box {
     height: 100%;
     display: flex;
 }
 
-header>div#header-wrapper>div.header-box.header-padding {
+header div#header-wrapper>div.header-box.header-padding {
     flex: 1;
 }
 
@@ -70,33 +70,33 @@ header a#logo {
     background: url("assets/icons/light/CubeSat.svg") no-repeat center center / cover;
 }
 
-header>div#header-wrapper>div#title-wrapper {
+header div#header-wrapper>div#title-wrapper {
     display: flex;
     justify-content: space-between;
     width: var(--main-width);
 }
 
-header>div#header-wrapper>div#title-wrapper>h1 {
+header h1 {
     color: var(--theme-white);
     font-size: 35px;
     font-weight: bold;
 }
 
-header>div#header-wrapper>div#title-wrapper>nav {
+header nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-header>div#header-wrapper>div#title-wrapper>nav>a {
+header nav>a {
     color: var(--theme-white);
     font-size: 1.25em;
     box-sizing: border-box;
     /* TODO: Make the padding take up all of the cell */
-    padding: 10px 0.5em;
+    padding: 10px 1em;
 }
 
-header>div#header-wrapper>div#title-wrapper>nav>a:hover {
+header nav>a:hover {
     background-color: var(--theme-white);
     color: black;
     mix-blend-mode: screen;
@@ -104,12 +104,12 @@ header>div#header-wrapper>div#title-wrapper>nav>a:hover {
     text-decoration: none;
 }
 
-header>div#header-wrapper>div#title-wrapper>nav>a.active {
+header nav>a.active {
     text-decoration: underline;
     text-underline-offset: 5px;
 }
 
-header>div#header-wrapper>div.header-box>#light-switch-wrapper {
+header #light-switch-wrapper {
     position: relative;
     width: 3em;
     height: 1.5em;
@@ -117,13 +117,13 @@ header>div#header-wrapper>div.header-box>#light-switch-wrapper {
     margin-right: 1em;
 }
 
-header>div#header-wrapper>div.header-box>#light-switch-wrapper>input#light-switch {
+header #light-switch-wrapper>input#light-switch {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-header>div#header-wrapper>div.header-box>#light-switch-wrapper>#slider {
+header #light-switch-wrapper>#slider {
     outline: 3px solid var(--theme-white);
     position: absolute;
     cursor: pointer;
@@ -135,7 +135,7 @@ header>div#header-wrapper>div.header-box>#light-switch-wrapper>#slider {
     border-radius: 0.75em;
 }
 
-header>div#header-wrapper>div.header-box>#light-switch-wrapper>#slider:before {
+header #light-switch-wrapper>#slider:before {
     position: absolute;
     content: "";
     height: 1em;
@@ -147,7 +147,7 @@ header>div#header-wrapper>div.header-box>#light-switch-wrapper>#slider:before {
     border-radius: 50%;
 }
 
-header>div#header-wrapper>div.header-box>#light-switch-wrapper>input#light-switch:checked+#slider:before {
+header #light-switch-wrapper>input#light-switch:checked+#slider:before {
     transform: translateX(1.5em);
 }
 
@@ -176,7 +176,7 @@ footer {
     padding-top: 1em;
     border-top: 1px solid var(--theme-off-white);
     text-align: center;
-    width: 80%;
+    width: var(--main-width);
 }
 
 footer>.footer-pair {
