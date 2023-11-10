@@ -10,7 +10,7 @@
     --theme-dark-grey: #24292e;
     --theme-purple: #400080;
     --header-height: 50px;
-    --main-width: 80%;
+    --main-margin: 1.5in;
     --theme-time: 0.5s;
 }
 
@@ -41,10 +41,21 @@ header {
     position: fixed;
     width: 100%;
     height: var(--header-height);
-    background: linear-gradient(to right, var(--theme-red), var(--theme-blue));
     z-index: 99;
     top: 0;
     transition: var(--theme-time);
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, var(--theme-red), var(--theme-blue));
+    opacity: calc(var(--scroll) / 500);
+    z-index: -1;
 }
 
 header div#header-wrapper {
@@ -53,16 +64,13 @@ header div#header-wrapper {
     align-items: center;
 }
 
-header div#header-wrapper>div.header-box {
+header div#header-wrapper>div.header-padding {
     height: 100%;
-    display: flex;
-}
-
-header div#header-wrapper>div.header-box.header-padding {
-    flex: 1;
+    width: var(--main-margin);
 }
 
 header a#logo {
+    display: block;
     transition: var(--theme-time);
     /* TODO: Make the width dynamic */
     width: calc(850 / 700 * var(--header-height));
@@ -70,13 +78,26 @@ header a#logo {
     background: url("assets/icons/light/CubeSat.svg") no-repeat center center / cover;
 }
 
+header a#logo::before {
+    content: "";
+    position: absolute;
+    display: block;
+    /* TODO: Make the width dynamic */
+    width: calc(850 / 700 * var(--header-height));
+    height: var(--header-height);
+    background-color: var(--theme-red);
+    z-index: -2;
+}
+
 header div#header-wrapper>div#title-wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    width: var(--main-width);
+    width: calc(100% - 2 * var(--main-margin));
 }
 
 header h1 {
+    margin: 0;
     color: var(--theme-white);
     font-size: 35px;
     font-weight: bold;
@@ -114,7 +135,6 @@ header #light-switch-wrapper {
     width: 3em;
     height: 1.5em;
     margin: 0;
-    margin-right: 1em;
 }
 
 header #light-switch-wrapper>input#light-switch {
@@ -154,13 +174,13 @@ header #light-switch-wrapper>input#light-switch:checked+#slider:before {
 div#hero {
     display: grid;
     place-items: center;
-    background: linear-gradient(#00000060, #00000060), url("assets/Hero.jpg") no-repeat center center / cover;
+    background: linear-gradient(#00000060, #00000060), url("assets/Hero.jpg") no-repeat fixed center / cover;
     width: 100%;
-    height: 100vh;
+    height: 100svh;
 }
 
 div#hero div#mission-statement-wrapper {
-    width: 80%;
+    width: calc(100% - 2 * var(--main-margin));
 }
 
 div#hero h1 {
@@ -192,8 +212,7 @@ div#hero a#join:hover {
 }
 
 main {
-    margin: 1em 0;
-    max-width: var(--main-width);
+    margin: 1em var(--main-margin);
 }
 
 main>section p {
@@ -212,7 +231,8 @@ footer {
     padding-top: 1em;
     border-top: 1px solid var(--theme-off-white);
     text-align: center;
-    width: var(--main-width);
+    margin: 0 var(--main-margin);
+    width: calc(100% - 2 * var(--main-margin));
 }
 
 footer>.footer-pair {
@@ -260,8 +280,8 @@ footer a#mail-icon {
 #scroll-button {
     display: none;
     position: fixed;
-    bottom: 2em;
-    right: 3em;
+    bottom: 1em;
+    right: calc((var(--main-margin) - 3em) * 0.5);
     z-index: 99;
     width: 3em;
     height: 3em;

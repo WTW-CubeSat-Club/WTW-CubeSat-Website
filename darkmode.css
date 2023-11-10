@@ -2,7 +2,7 @@ body {
     background-color: var(--theme-dark-grey) !important;
 }
 
-header {
+header::before {
     background: linear-gradient(to right, var(--theme-purple), var(--theme-blue));
 }
 
@@ -10,7 +10,11 @@ header a#logo {
     background: url("assets/icons/dark/CubeSat.svg") no-repeat center center / cover;
 }
 
-header>div#header-wrapper>div.header-box>#light-switch-wrapper>#slider:before {
+header a#logo::before {
+    background-color: var(--theme-purple);
+}
+
+header #light-switch-wrapper>#slider:before {
     content: "";
     background: url("assets/icons/dark/Moon.svg") no-repeat center center / cover;
 }

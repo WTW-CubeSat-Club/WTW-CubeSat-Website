@@ -3,8 +3,9 @@
     <home>
         <mission-statement></mission-statement>
         <faq></faq>
-        <bullitin></bullitin>
+        <bulletin></bulletin>
         <join></join>
+        <bug-report></bug-report>
     </home>
     <about>
         <meet-the-members></meet-the-members>
