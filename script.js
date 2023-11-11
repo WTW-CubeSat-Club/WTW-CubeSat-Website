@@ -46,10 +46,18 @@ const scrollToTop =
 {
     const scrollButton = document.querySelector('button#scroll-button');
 
+    // TODO: Maybe scroll down on reload
+    // TODO: Stop the page from scrolling up on reload
+
+    const onScroll =
+        () => scrollButton.style.display = document.documentElement.scrollTop > 1_500
+            ? 'block'
+            : 'none'
+
     // When the user scrolls down 500px from the top of the document, show the button
-    window.addEventListener('scroll', () => scrollButton.style.display = document.documentElement.scrollTop > 1_500
-        ? 'block'
-        : 'none');
+    window.addEventListener('scroll', onScroll);
+
+    onScroll();
 }
 
 // Scrolling

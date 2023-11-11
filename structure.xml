@@ -2,7 +2,13 @@
 <website>
     <home>
         <mission-statement></mission-statement>
-        <faq></faq>
+        <faq>
+            <what-is-a-cubesat />
+            <who-are-we />
+            <how />
+            <why />
+            <how-can-i-help />
+        </faq>
         <bulletin></bulletin>
         <join></join>
         <bug-report></bug-report>

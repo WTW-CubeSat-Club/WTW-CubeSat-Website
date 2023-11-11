@@ -7,7 +7,7 @@
     --theme-black: #000000;
     --theme-off-black: #888888;
     --theme-off-white: #eaeaea;
-    --theme-dark-grey: #24292e;
+    --theme-dark-grey: #17191b;
     --theme-purple: #400080;
     --header-height: 50px;
     --main-margin: 1.5in;
@@ -212,20 +212,38 @@ div#hero a#join:hover {
 }
 
 main {
-    margin: 1em var(--main-margin);
+    margin: 2rem var(--main-margin);
 }
 
-main>section p {
+main section p {
     text-align: justify;
     text-justify: inter-word;
 }
 
-main>section>#social-media-gallery {
+main section#faq {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+main section#faq div.two {
+    top: calc(var(--header-height) + 1in);
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section#faq div.two>* {
+    width: 45%;
+}
+
+/* main section #social-media-gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3em;
-}
+} */
 
 footer {
     padding-top: 1em;
@@ -280,7 +298,7 @@ footer a#mail-icon {
 #scroll-button {
     display: none;
     position: fixed;
-    bottom: 1em;
+    bottom: 3em;
     right: calc((var(--main-margin) - 3em) * 0.5);
     z-index: 99;
     width: 3em;
