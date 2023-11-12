@@ -15,10 +15,6 @@
     --body-color: var(--theme-dark-grey);
 }
 
-button:hover {
-    cursor: pointer;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -94,7 +90,6 @@ header div#header-wrapper>div#title-wrapper {
 header h1 {
     margin: 0;
     color: var(--theme-white);
-    font-size: 35px;
     font-weight: bold;
 }
 
@@ -168,24 +163,23 @@ header #light-switch-wrapper>input#light-switch:checked+#slider:before {
 
 div#hero {
     display: grid;
-    place-items: center;
+    align-items: center;
     background: linear-gradient(#00000080, #00000080), url("assets/Hero.jpg") no-repeat fixed center / cover;
     width: 100%;
     height: 100svh;
 }
 
-div#hero div#mission-statement-wrapper {
-    width: calc(100% - 2 * var(--main-margin));
+div#hero div#hero-text-wrapper {
+    margin-left: var(--main-margin);
+    width: calc(50% - var(--main-margin));
 }
 
 div#hero h1 {
     color: var(--theme-white);
-    font-size: 35px;
     font-weight: bold;
 }
 
 div#hero p {
-    width: 50%;
     color: var(--theme-white);
 }
 
@@ -316,8 +310,16 @@ h6 {
     color: var(--theme-white);
 }
 
+h1 {
+    font-size: 35px !important;
+}
+
 p,
 span,
 small {
     color: var(--theme-off-white);
+}
+
+button:hover {
+    cursor: pointer;
 }
