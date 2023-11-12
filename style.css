@@ -7,14 +7,12 @@
     --theme-black: #000000;
     --theme-off-black: #888888;
     --theme-off-white: #eaeaea;
-    --theme-dark-grey: #17191b;
-    /* --theme-dark-grey: #0f1010; */
-    /* --theme-dark-grey: #1a2433; */
-    --theme-purple: #400080;
+    --theme-dark-grey: #0f1010;
+    --theme-purple: #7474a4;
     --header-height: 50px;
     --main-margin: 1.5in;
     --theme-time: 0.5s;
-    --body-color: var(--theme-white);
+    --body-color: var(--theme-dark-grey);
 }
 
 button:hover {
@@ -32,6 +30,7 @@ button:hover {
 }
 
 html {
+    color-scheme: dark;
     scroll-behavior: smooth;
 }
 
@@ -60,7 +59,7 @@ header::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, var(--theme-red), var(--theme-blue));
+    background: linear-gradient(to right, var(--theme-purple), var(--theme-blue));
     opacity: calc(var(--scroll) / 500);
     z-index: -1;
 }
@@ -81,19 +80,8 @@ header a#logo {
     transition: var(--theme-time);
     /* TODO: Make the width dynamic */
     width: calc(850 / 700 * var(--header-height));
-    height: var(--header-height);
-    background: url("assets/icons/light/CubeSat.svg") no-repeat center center / cover;
-}
-
-header a#logo::before {
-    content: "";
-    position: absolute;
-    display: block;
-    /* TODO: Make the width dynamic */
-    width: calc(850 / 700 * var(--header-height));
-    height: var(--header-height);
-    background-color: var(--theme-red);
-    z-index: -2;
+    height: inherit;
+    background: url("assets/CubeSatLogoWhite.svg") no-repeat center center / cover;
 }
 
 header div#header-wrapper>div#title-wrapper {
@@ -169,7 +157,7 @@ header #light-switch-wrapper>#slider:before {
     width: 1em;
     left: 0.25em;
     top: 0.25em;
-    background: url("assets/icons/light/Sun.svg") no-repeat center center / cover;
+    background: url("assets/icons/dark/Moon.svg") no-repeat center center / cover;
     transition: var(--theme-time);
     border-radius: 50%;
 }
@@ -286,23 +274,23 @@ footer img {
 }
 
 footer a#insta-icon {
-    background: url("assets/icons/light/Instagram.svg") no-repeat center center / cover;
+    background: url("assets/icons/dark/Instagram.svg") no-repeat center center / cover;
 }
 
 footer a#twitter-icon {
-    background: url("assets/icons/light/Twitter.svg") no-repeat center center / cover;
+    background: url("assets/icons/dark/Twitter.svg") no-repeat center center / cover;
 }
 
 footer a#github-icon {
-    background: url("assets/icons/light/Github.svg") no-repeat center center / cover;
+    background: url("assets/icons/dark/Github.svg") no-repeat center center / cover;
 }
 
 footer a#school-icon {
-    background: url("assets/icons/light/School.svg") no-repeat center center / cover;
+    background: url("assets/icons/dark/School.svg") no-repeat center center / cover;
 }
 
 footer a#mail-icon {
-    background: url("assets/icons/light/Mail.svg") no-repeat center center / cover;
+    background: url("assets/icons/dark/Mail.svg") no-repeat center center / cover;
 }
 
 #scroll-button {
@@ -316,7 +304,7 @@ footer a#mail-icon {
     border-radius: 50%;
     outline: none;
     border: none;
-    background: url("assets/icons/light/Rocket.svg") no-repeat center center / cover;
+    background: url("assets/icons/dark/Rocket.svg") no-repeat center center / cover;
 }
 
 h1,
@@ -325,11 +313,11 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--theme-black);
+    color: var(--theme-white);
 }
 
 p,
 span,
 small {
-    color: var(--theme-off-black);
+    color: var(--theme-off-white);
 }

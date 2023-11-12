@@ -7,7 +7,6 @@
 
         // document.querySelector('a.twitter-timeline').setAttribute('data-theme', isLight ? 'light' : 'dark');
 
-        // TODO: Make darkmode the default stylesheet
         if (isLight) {
             if (document.querySelector('link#dark-stylesheet')) {
                 document.querySelector('head').removeChild(document.querySelector('link#dark-stylesheet'));
@@ -17,7 +16,7 @@
             node.id = 'dark-stylesheet';
             node.rel = 'stylesheet';
             node.type = 'text/css';
-            node.href = 'darkmode.css';
+            node.href = 'lightmode.css';
 
             document.querySelector('head').appendChild(node);
         }
