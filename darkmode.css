@@ -1,5 +1,13 @@
+:root {
+    --body-color: var(--theme-dark-grey);
+}
+
+html {
+    color-scheme: dark;
+}
+
 body {
-    background-color: var(--theme-dark-grey) !important;
+    background-color: var(--body-color) !important;
 }
 
 header::before {

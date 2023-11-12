@@ -8,10 +8,17 @@
     --theme-off-black: #888888;
     --theme-off-white: #eaeaea;
     --theme-dark-grey: #17191b;
+    /* --theme-dark-grey: #0f1010; */
+    /* --theme-dark-grey: #1a2433; */
     --theme-purple: #400080;
     --header-height: 50px;
     --main-margin: 1.5in;
     --theme-time: 0.5s;
+    --body-color: var(--theme-white);
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 * {
@@ -34,7 +41,7 @@ body {
     flex-direction: column;
     align-items: center;
     transition: var(--theme-time);
-    background-color: var(--theme-white) !important;
+    background-color: var(--body-color) !important;
 }
 
 header {
@@ -174,7 +181,7 @@ header #light-switch-wrapper>input#light-switch:checked+#slider:before {
 div#hero {
     display: grid;
     place-items: center;
-    background: linear-gradient(#00000060, #00000060), url("assets/Hero.jpg") no-repeat fixed center / cover;
+    background: linear-gradient(#00000080, #00000080), url("assets/Hero.jpg") no-repeat fixed center / cover;
     width: 100%;
     height: 100svh;
 }
@@ -212,7 +219,7 @@ div#hero a#join:hover {
 }
 
 main {
-    margin: 2rem var(--main-margin);
+    margin: 0 var(--main-margin);
 }
 
 main section p {
@@ -223,15 +230,18 @@ main section p {
 main section#faq {
     display: flex;
     flex-direction: column;
-    gap: 3em;
 }
 
+/* TODO: Make wider to ensure that it covers the entire screen */
 main section#faq div.two {
-    top: calc(var(--header-height) + 1in);
     position: sticky;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    top: var(--header-height);
+    box-sizing: content-box;
+    height: calc(100svh - var(--header-height));
+    background-color: var(--body-color);
 }
 
 main section#faq div.two>* {
