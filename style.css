@@ -25,6 +25,22 @@
     transition: var(--theme-time);
 }
 
+.glass {
+    border: 1px solid var(--theme-white);
+    background-color: var(--theme-white);
+    background: linear-gradient(to right bottom, #c0c0c0c0, #c0c0c040);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+}
+
+.panel {
+    padding: 40px;
+}
+
 html {
     color-scheme: dark;
     scroll-behavior: smooth;
@@ -96,6 +112,7 @@ header h1 {
 header nav {
     display: flex;
     justify-content: space-evenly;
+    gap: 1em;
     align-items: center;
 }
 
@@ -104,7 +121,7 @@ header nav>a {
     font-size: 1.25em;
     box-sizing: border-box;
     /* TODO: Make the padding take up all of the cell */
-    padding: 10px 1em;
+    padding: 0.1em 0.75em !important;
     transition: var(--theme-time);
 }
 
@@ -187,25 +204,23 @@ main section#hero {
     background: linear-gradient(#00000080, #00000080), url("assets/images/Hero.jpg") no-repeat fixed center / cover;
     width: 100%;
     height: 100svh;
+    color: var(--theme-white);
 }
 
 main section#hero div#hero-text-wrapper {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 main section#hero h1 {
-    color: var(--theme-white);
     font-weight: bold;
 }
 
-main section#hero p {
-    color: var(--theme-white);
-}
-
 main section#hero a#join {
-    border: 2px solid var(--theme-white);
-    padding: 0 0.5em;
-    background-color: transparent;
+    width: fit-content;
+    /* padding: 0 0.5em; */
     color: var(--theme-white);
     font-size: 1.25rem;
     transition: var(--theme-time);
@@ -251,14 +266,6 @@ main section#faq div.two {
 
 main section#faq div.two>* {
     width: 45%;
-}
-
-main div.glass {
-    border-radius: 1em;
-    padding: 3em;
-    background-color: var(--theme-white);
-    background: linear-gradient(to right bottom, #c0c0c0c0, #c0c0c040);
-    backdrop-filter: blur(8px);
 }
 
 /* main section #social-media-gallery {

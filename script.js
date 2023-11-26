@@ -1,40 +1,40 @@
 // TODO: Refactor in TypeScript
 
 // Lightness Mode
-{
-    const swapStyle = isLight => {
-        document.querySelector('label#light-switch-wrapper').title = `Turn on ${isLight ? 'Light' : 'Dark'} Mode`;
+// {
+//     const swapStyle = isLight => {
+//         document.querySelector('label#light-switch-wrapper').title = `Turn on ${isLight ? 'Light' : 'Dark'} Mode`;
 
-        // document.querySelector('a.twitter-timeline').setAttribute('data-theme', isLight ? 'light' : 'dark');
+//         // document.querySelector('a.twitter-timeline').setAttribute('data-theme', isLight ? 'light' : 'dark');
 
-        if (isLight) {
-            if (document.querySelector('link#dark-stylesheet')) {
-                document.querySelector('head').removeChild(document.querySelector('link#dark-stylesheet'));
-            }
-        } else {
-            const node = document.createElement('link');
-            node.id = 'dark-stylesheet';
-            node.rel = 'stylesheet';
-            node.type = 'text/css';
-            node.href = 'lightmode.css';
+//         if (isLight) {
+//             if (document.querySelector('link#dark-stylesheet')) {
+//                 document.querySelector('head').removeChild(document.querySelector('link#dark-stylesheet'));
+//             }
+//         } else {
+//             const node = document.createElement('link');
+//             node.id = 'dark-stylesheet';
+//             node.rel = 'stylesheet';
+//             node.type = 'text/css';
+//             node.href = 'lightmode.css';
 
-            document.querySelector('head').appendChild(node);
-        }
+//             document.querySelector('head').appendChild(node);
+//         }
 
-        localStorage.setItem('theme', isLight);
-    };
+//         localStorage.setItem('theme', isLight);
+//     };
 
-    const isLight = localStorage.getItem('theme') == 'true';
+//     const isLight = localStorage.getItem('theme') == 'true';
 
-    swapStyle(isLight);
+//     swapStyle(isLight);
 
-    const lightSwitch = document.querySelector('input#light-switch');
-    lightSwitch.addEventListener('change', () => swapStyle(!lightSwitch.checked));
+//     const lightSwitch = document.querySelector('input#light-switch');
+//     lightSwitch.addEventListener('change', () => swapStyle(!lightSwitch.checked));
 
-    if (!isLight) {
-        lightSwitch.checked = true;
-    }
-}
+//     if (!isLight) {
+//         lightSwitch.checked = true;
+//     }
+// }
 
 // Scroll button
 
