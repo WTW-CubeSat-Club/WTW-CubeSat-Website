@@ -2,6 +2,7 @@
 <website>
     <home>
         <mission-statement></mission-statement>
+        <join></join>
         <faq>
             <what-is-a-cubesat />
             <who-are-we />
@@ -9,23 +10,17 @@
             <why />
             <how-can-i-help />
         </faq>
-        <bulletin></bulletin>
-        <join></join>
-        <bug-report></bug-report>
+        <bulletin>
+            <socials></socials>
+        </bulletin>
     </home>
+    <outreach></outreach>
     <about>
         <timeline></timeline>
         <cubesat-breakdown></cubesat-breakdown>
         <meet-the-members></meet-the-members>
+        <sponsors></sponsors>
+        <emails></emails>
     </about>
     <data></data>
-    <contacts>
-        <socials></socials>
-        <sponsors></sponsors>
-        <donate></donate>
-        <emails></emails>
-        <socials></socials>
-        <github></github>
-        <outreach></outreach>
-    </contacts>
 </website>

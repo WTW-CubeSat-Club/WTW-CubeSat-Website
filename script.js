@@ -3,7 +3,7 @@
 // Lightness Mode
 {
     const swapStyle = isLight => {
-        document.querySelector('label#light-switch-wrapper').title = `Turn on ${isLight ? 'Dark' : 'Light'} Mode`;
+        document.querySelector('label#light-switch-wrapper').title = `Turn on ${isLight ? 'Light' : 'Dark'} Mode`;
 
         // document.querySelector('a.twitter-timeline').setAttribute('data-theme', isLight ? 'light' : 'dark');
 

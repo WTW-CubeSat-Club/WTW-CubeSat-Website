@@ -229,7 +229,7 @@ main section#faq div.two-wrapper {
     top: var(--header-height);
     position: sticky;
     height: calc(100svh - var(--header-height));
-    background: url('assets/backgrounds/BG4.png') no-repeat fixed center / cover;
+    background: url('assets/backgrounds/BG1.png') no-repeat fixed center / cover;
 }
 
 main section#faq div.two-wrapper::after {
@@ -240,7 +240,7 @@ main section#faq div.two-wrapper::after {
     bottom: 0;
     right: 0;
     z-index: -1;
-    background: url('assets/backgrounds/BG3.svg') no-repeat center center / cover;
+    background: url('assets/backgrounds/cutouts/dark/Stripe.svg') no-repeat center center / cover;
 }
 
 main section#faq div.two {
