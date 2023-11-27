@@ -37,6 +37,14 @@
     padding: 10px 20px;
 }
 
+.button:hover {
+    background-color: var(--theme-white);
+    color: black !important;
+    mix-blend-mode: screen;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .panel {
     padding: 40px;
 }
@@ -103,12 +111,6 @@ header div#header-wrapper>div#title-wrapper {
     width: calc(100% - 2 * var(--main-margin));
 }
 
-header h1 {
-    margin: 0;
-    color: var(--theme-white);
-    font-weight: bold;
-}
-
 header nav {
     display: flex;
     justify-content: space-evenly;
@@ -125,15 +127,8 @@ header nav>a {
     transition: var(--theme-time);
 }
 
-header nav>a:hover {
-    background-color: var(--theme-white);
-    color: black;
-    mix-blend-mode: screen;
-    text-decoration: none;
-}
-
 header nav>a.active {
-    text-decoration: underline;
+    text-decoration: underline !important;
     text-underline-offset: 5px;
 }
 
@@ -225,13 +220,6 @@ main section#hero a#join {
     font-size: 1.25rem;
     transition: var(--theme-time);
     text-decoration: none;
-}
-
-main section#hero a#join:hover {
-    background-color: var(--theme-white);
-    color: black;
-    mix-blend-mode: screen;
-    cursor: pointer;
 }
 
 main section#faq {
