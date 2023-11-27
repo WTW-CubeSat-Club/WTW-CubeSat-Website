@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 :root {
-    --theme-red: #ec1c24;
-    --theme-blue: #000058;
-    --theme-white: #ffffff;
-    --theme-black: #000000;
-    --theme-off-black: #888888;
-    --theme-off-white: #eaeaea;
-    --theme-dark-grey: #0f1010;
+    --theme-primary: #0f1010;
+    --theme-secondary: #eaeaea;
+    --theme-tertiary: #ffffff;
+
+    --theme-accent-blue: #00c0ff;
+    --theme-accent-yellow: #ffcd00;
+    --theme-accent-magenta: #ff00f4;
+
+    --cubesat-red: #ec1c24;
+    --cubesat-blue: #000058;
+
+
+
     --theme-purple: #7474a4;
     --header-height: 50px;
     --main-margin: 1.5in;
     --theme-time: 0.5s;
-    --body-color: var(--theme-dark-grey);
+    --body-color: var(--theme-primary);
 }
 
 * {
@@ -26,8 +32,8 @@
 }
 
 .glass {
-    border: 1px solid var(--theme-white);
-    background-color: var(--theme-white);
+    border: 1px solid var(--theme-secondary);
+    background-color: var(--theme-secondary);
     background: linear-gradient(to right bottom, #c0c0c0c0, #c0c0c040);
     backdrop-filter: blur(8px);
     border-radius: 10px;
@@ -38,7 +44,7 @@
 }
 
 .button:hover {
-    background-color: var(--theme-white);
+    background-color: var(--theme-secondary);
     color: black !important;
     mix-blend-mode: screen;
     cursor: pointer;
@@ -79,7 +85,7 @@ header::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, var(--theme-purple), var(--theme-blue));
+    background: linear-gradient(to right, var(--theme-purple), var(--cubesat-blue));
     opacity: calc(var(--scroll) / 500);
     z-index: -1;
 }
@@ -119,7 +125,7 @@ header nav {
 }
 
 header nav>a {
-    color: var(--theme-white);
+    color: var(--theme-tertiary);
     font-size: 1.25em;
     box-sizing: border-box;
     /* TODO: Make the padding take up all of the cell */
@@ -132,7 +138,7 @@ header nav>a.active {
     text-underline-offset: 5px;
 }
 
-header #light-switch-wrapper {
+/* header #light-switch-wrapper {
     position: relative;
     width: 3em;
     height: 1.5em;
@@ -171,7 +177,7 @@ header #light-switch-wrapper>#slider:before {
 
 header #light-switch-wrapper>input#light-switch:checked+#slider:before {
     transform: translateX(1.5em);
-}
+} */
 
 main,
 main .full-width {
@@ -199,7 +205,6 @@ main section#hero {
     background: linear-gradient(#00000080, #00000080), url("assets/images/Hero.jpg") no-repeat fixed center / cover;
     width: 100%;
     height: 100svh;
-    color: var(--theme-white);
 }
 
 main section#hero div#hero-text-wrapper {
@@ -216,7 +221,7 @@ main section#hero h1 {
 main section#hero a#join {
     width: fit-content;
     /* padding: 0 0.5em; */
-    color: var(--theme-white);
+    color: var(--theme-tertiary);
     font-size: 1.25rem;
     transition: var(--theme-time);
     text-decoration: none;
@@ -265,7 +270,7 @@ main section#faq div.two>* {
 
 footer {
     padding-top: 1em;
-    border-top: 1px solid var(--theme-off-white);
+    border-top: 1px solid var(--theme-secondary);
     text-align: center;
     margin: 0 var(--main-margin);
     width: calc(100% - 2 * var(--main-margin));
@@ -333,7 +338,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--theme-white);
+    color: var(--theme-tertiary);
 }
 
 h1 {
@@ -343,7 +348,7 @@ h1 {
 p,
 span,
 small {
-    color: var(--theme-off-white);
+    color: var(--theme-secondary);
 }
 
 button:hover {
