@@ -3,13 +3,7 @@
     <home>
         <mission-statement></mission-statement>
         <join></join>
-        <faq>
-            <what-is-a-cubesat />
-            <who-are-we />
-            <how />
-            <why />
-            <how-can-i-help />
-        </faq>
+        <faq></faq>
         <bulletin>
             <socials></socials>
         </bulletin>

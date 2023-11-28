@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
 :root {
     --theme-primary: #0f1010;
     --theme-secondary: #eaeaea;
@@ -17,6 +15,7 @@
     --theme-purple: #7474a4;
     --header-height: 50px;
     --main-margin: 1.5in;
+    --theme-aspect-ratio: 16 / 9;
     --theme-time: 0.5s;
     --body-color: var(--theme-primary);
 }
@@ -29,6 +28,25 @@
     box-sizing: border-box;
     text-decoration: none;
     transition: var(--theme-time);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--theme-tertiary);
+}
+
+p,
+span,
+small {
+    color: var(--theme-secondary);
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .glass {
@@ -62,11 +80,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: var(--theme-time);
-    background-color: var(--body-color) !important;
+    background-color: var(--body-color);
 }
 
 header {
@@ -74,8 +88,6 @@ header {
     width: 100%;
     height: var(--header-height);
     z-index: 99;
-    top: 0;
-    transition: var(--theme-time);
 }
 
 header::before {
@@ -86,6 +98,7 @@ header::before {
     bottom: 0;
     left: 0;
     background: linear-gradient(to right, var(--theme-purple), var(--cubesat-blue));
+    /* background: linear-gradient(to right, var(--theme-accent-blue), var(--theme-accent-magenta)); */
     opacity: calc(var(--scroll) / 500);
     z-index: -1;
 }
@@ -170,7 +183,7 @@ header #light-switch-wrapper>#slider:before {
     width: 1em;
     left: 0.25em;
     top: 0.25em;
-    background: url("assets/icons/dark/Moon.svg") no-repeat center center / cover;
+    background: url("assets/icons/Moon.svg") no-repeat center center / cover;
     transition: var(--theme-time);
     border-radius: 50%;
 }
@@ -203,7 +216,6 @@ main section#hero {
     display: grid;
     align-items: center;
     background: linear-gradient(#00000080, #00000080), url("assets/images/Hero.jpg") no-repeat fixed center / cover;
-    width: 100%;
     height: 100svh;
 }
 
@@ -212,10 +224,6 @@ main section#hero div#hero-text-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1em;
-}
-
-main section#hero h1 {
-    font-weight: bold;
 }
 
 main section#hero a#join {
@@ -233,23 +241,9 @@ main section#faq {
 }
 
 /* TODO: Use CSS classes to affect the SVG */
-main section#faq div.two-wrapper {
-    top: var(--header-height);
-    position: sticky;
-    height: calc(100svh - var(--header-height));
-    background: url('assets/backgrounds/BG1.png') no-repeat fixed center / cover;
-}
-
-main section#faq div.two-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    background: url('assets/backgrounds/cutouts/dark/Stripe.svg') no-repeat center center / cover;
-}
+/* main section#faq div.two-wrapper { */
+/* background: url('assets/backgrounds/BG1.png') no-repeat fixed center / cover; */
+/* } */
 
 main section#faq div.two {
     display: flex;
@@ -259,6 +253,16 @@ main section#faq div.two {
 
 main section#faq div.two>* {
     width: 45%;
+}
+
+main section#bulletin {
+    display: grid;
+    place-items: center;
+}
+
+main section#bulletin div#slideshow {
+    aspect-ratio: 16 / 9;
+    width: 80%;
 }
 
 /* main section #social-media-gallery {
@@ -299,23 +303,19 @@ footer img {
 }
 
 footer a#insta-icon {
-    background: url("assets/icons/dark/Instagram.svg") no-repeat center center / cover;
-}
-
-footer a#twitter-icon {
-    background: url("assets/icons/dark/Twitter.svg") no-repeat center center / cover;
+    background: url("assets/icons/Instagram.svg") no-repeat center center / cover;
 }
 
 footer a#github-icon {
-    background: url("assets/icons/dark/Github.svg") no-repeat center center / cover;
+    background: url("assets/icons/Github.svg") no-repeat center center / cover;
 }
 
 footer a#school-icon {
-    background: url("assets/icons/dark/School.svg") no-repeat center center / cover;
+    background: url("assets/icons/School.svg") no-repeat center center / cover;
 }
 
 footer a#mail-icon {
-    background: url("assets/icons/dark/Mail.svg") no-repeat center center / cover;
+    background: url("assets/icons/Mail.svg") no-repeat center center / cover;
 }
 
 #scroll-button {
@@ -329,28 +329,5 @@ footer a#mail-icon {
     border-radius: 50%;
     outline: none;
     border: none;
-    background: url("assets/icons/dark/Rocket.svg") no-repeat center center / cover;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--theme-tertiary);
-}
-
-h1 {
-    font-size: 35px !important;
-}
-
-p,
-span,
-small {
-    color: var(--theme-secondary);
-}
-
-button:hover {
-    cursor: pointer;
+    background: url("assets/icons/Rocket.svg") no-repeat center center / cover;
 }
