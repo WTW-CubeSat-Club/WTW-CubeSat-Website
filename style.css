@@ -118,9 +118,9 @@ header a#logo {
     display: block;
     transition: var(--theme-time);
     /* TODO: Make the width dynamic */
-    width: calc(850 / 700 * var(--header-height));
+    width: calc(850 / 850 * var(--header-height));
     height: inherit;
-    background: url("assets/CubeSatLogoWhite.svg") no-repeat center center / cover;
+    background: url("assets/icons/favicon.ico") no-repeat center center / cover;
 }
 
 header div#header-wrapper>div#title-wrapper {
