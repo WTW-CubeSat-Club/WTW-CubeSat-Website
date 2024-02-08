@@ -2,6 +2,8 @@
 <website>
     <home>
         <mission-statement></mission-statement>
+        <map-of-stations></map-of-stations>
+        <cubesat-satellite></cubesat-satellite>
         <join></join>
         <faq></faq>
         <bulletin>
@@ -9,8 +11,13 @@
         </bulletin>
     </home>
     <cubesat>
+        <first-cubesat-info></first-cubesat-info>
+        <...></...>
     </cubesat>
     <ground-station-network>
+        <virginia-station></virginia-station>
+        <gambia-station></gambia-station>
+        <korea-station></korea-station>
     </ground-station-network>
     <about>
         <timeline></timeline>
