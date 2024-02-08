@@ -8,7 +8,10 @@
             <socials></socials>
         </bulletin>
     </home>
-    <outreach></outreach>
+    <cubesat>
+    </cubesat>
+    <ground-station-network>
+    </ground-station-network>
     <about>
         <timeline></timeline>
         <cubesat-breakdown></cubesat-breakdown>
@@ -16,5 +19,4 @@
         <sponsors></sponsors>
         <emails></emails>
     </about>
-    <data></data>
 </website>
