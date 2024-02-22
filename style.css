@@ -127,7 +127,7 @@ header div#header-wrapper>div#title-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 2 * var(--main-margin));
+    width: calc(100% - 1.25 * var(--main-margin));
 }
 
 header nav {
