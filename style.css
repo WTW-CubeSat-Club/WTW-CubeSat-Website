@@ -272,14 +272,14 @@ footer a#mail-icon {
     background: url("assets/icons/Mail.svg") no-repeat center center / cover;
 }
 
-#scroll-button {
+button#scroll-button {
     display: none;
     position: fixed;
-    bottom: 3em;
-    right: calc((var(--main-margin) - 3em) * 0.5);
+    bottom: 50px;
+    right: calc((var(--main-margin) - 50px) * 0.5);
     z-index: 99;
-    width: 3em;
-    height: 3em;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     outline: none;
     border: none;
