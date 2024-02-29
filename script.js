@@ -6,15 +6,22 @@ function scrollToTop() {
 // TODO: Maybe scroll down on reload
 // TODO: Stop the page from scrolling up on reload
 
-const scrollButton = document.querySelector('button#scroll-button');
+const scrollButton = document.querySelector("button#scroll-button");
 
 function onScroll() {
-    document.documentElement.style.setProperty('--scroll', document.documentElement.scrollTop);
-    scrollButton.style.display = document.documentElement.scrollTop > 1_500 ? 'block' : 'none';
+    document.documentElement.style.setProperty(
+        "--scroll",
+        document.documentElement.scrollTop
+    );
+    scrollButton.style.display =
+        document.documentElement.scrollTop > 1_500 ? "block" : "none";
 }
 
-document.documentElement.style.setProperty('--scroll', document.documentElement.scrollTop);
+document.documentElement.style.setProperty(
+    "--scroll",
+    document.documentElement.scrollTop
+);
 
-window.addEventListener('scroll', onScroll);
+window.addEventListener("scroll", onScroll);
 
 onScroll(); // TODO: Find out why this doesn't work

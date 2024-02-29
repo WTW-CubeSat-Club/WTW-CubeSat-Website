@@ -12,7 +12,7 @@
     </home>
     <cubesat>
         <first-cubesat-info></first-cubesat-info>
-        <...></...>
+        <x>...</x>
     </cubesat>
     <ground-station-network>
         <virginia-station></virginia-station>

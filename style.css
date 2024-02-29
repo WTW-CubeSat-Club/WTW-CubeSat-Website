@@ -10,8 +10,6 @@
     --cubesat-red: #ec1c24;
     --cubesat-blue: #000058;
 
-
-
     --theme-purple: #7474a4;
     --header-height: 50px;
     --main-margin: 1.5in;
@@ -79,7 +77,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--body-color);
 }
 
@@ -97,7 +95,11 @@ header::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, var(--theme-purple), var(--cubesat-blue));
+    background: linear-gradient(
+        to right,
+        var(--theme-purple),
+        var(--cubesat-blue)
+    );
     /* background: linear-gradient(to right, var(--theme-accent-blue), var(--theme-accent-magenta)); */
     opacity: calc(var(--scroll) / 500);
     z-index: -1;
@@ -109,7 +111,7 @@ header div#header-wrapper {
     align-items: center;
 }
 
-header div#header-wrapper>div.header-padding {
+header div#header-wrapper > div.header-padding {
     height: 100%;
     width: var(--main-margin);
 }
@@ -123,7 +125,7 @@ header a#logo {
     background: url("assets/icons/favicon.ico") no-repeat center center / cover;
 }
 
-header div#header-wrapper>div#title-wrapper {
+header div#header-wrapper > div#title-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -137,7 +139,7 @@ header nav {
     align-items: center;
 }
 
-header nav>a {
+header nav > a {
     color: var(--theme-tertiary);
     font-size: 1.25em;
     box-sizing: border-box;
@@ -146,10 +148,9 @@ header nav>a {
     transition: var(--theme-time);
 }
 
-header nav>a.active {
+header nav > a.active {
     background-color: cornflowerblue;
     color: white !important;
-   
 }
 
 /* header #light-switch-wrapper {
@@ -196,11 +197,14 @@ header #light-switch-wrapper>input#light-switch:checked+#slider:before {
 main,
 main .full-width {
     display: grid !important;
-    grid-template-columns: [full-width-start] var(--main-margin) [content-start] 1fr [content-end] var(--main-margin) [full-width-end];
+    grid-template-columns:
+        [full-width-start] var(--main-margin)
+        [content-start] 1fr [content-end] var(--main-margin)
+        [full-width-end];
 }
 
-main>:not(.full-width),
-main .full-width>*:not(.full-width) {
+main > :not(.full-width),
+main .full-width > *:not(.full-width) {
     grid-column: content;
 }
 
@@ -216,7 +220,8 @@ main section p {
 main section#hero {
     display: grid;
     align-items: center;
-    background: linear-gradient(#00000080, #00000080), url("assets/images/Hero.jpg") no-repeat fixed center / cover;
+    background: linear-gradient(#00000080, #00000080),
+        url("assets/images/Hero.jpg") no-repeat fixed center / cover;
     height: 100svh;
 }
 
@@ -252,7 +257,7 @@ main section#faq div.two {
     align-items: center;
 }
 
-main section#faq div.two>* {
+main section#faq div.two > * {
     width: 45%;
 }
 
@@ -281,7 +286,7 @@ footer {
     width: calc(100% - 2 * var(--main-margin));
 }
 
-footer>.footer-pair {
+footer > .footer-pair {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -304,7 +309,8 @@ footer img {
 }
 
 footer a#insta-icon {
-    background: url("assets/icons/Instagram.svg") no-repeat center center / cover;
+    background: url("assets/icons/Instagram.svg") no-repeat center center /
+        cover;
 }
 
 footer a#github-icon {

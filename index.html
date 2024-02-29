@@ -1,162 +1,253 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="WTW CubeSat"
+            content="W.T. Woodson HS is building a 1 unit satelite"
+        />
+        <title>WTW CubeSat</title>
+        <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- TODO: Get a bold version of Poppins -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <script type="text/javascript" src="script.js" defer></script>
+        <script src="https://w.behold.so/widget.js" type="module"></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="WTW CubeSat" content="W.T. Woodson HS is building a 1 unit satelite">
-    <title>WTW CubeSat</title>
-    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-    <!-- TODO: Get a bold version of Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js" defer></script>
-    <script src="https://w.behold.so/widget.js" type="module"></script>
-</head>
+    <body>
+        <header>
+            <!-- TODO: Remove wrappers -->
+            <div id="header-wrapper">
+                <div class="header-padding">
+                    <a id="logo" href="" title="WTW CubeSat test"></a>
+                </div>
+                <div id="title-wrapper">
+                    <img src="assets/LogoText.svg" alt="WTW CubeSat" />
+                    <nav>
+                        <a class="active glass button" href="index.html"
+                            >Home</a
+                        >
+                        <a class="glass button" href="update.html">Updates</a>
+                        <a class="glass button" href="cubesat.html">CubeSat</a>
+                        <a class="glass button" href="gs.html"
+                            >Ground Station Network</a
+                        >
+                        <a class="glass button" href="about.html">About</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="hero" class="full-width">
+                <div id="hero-text-wrapper">
+                    <!-- TODO: Make this parallax -->
+                    <div id="hero-text" class="glass panel">
+                        <p>
+                            Our mission at the W.T. Woodson CubeSat Club is to
+                            advance space exploration knowledge, foster respect,
+                            responsibility, teamwork, collaboration, and
+                            integrity. We seek innovative ideas, sharing
+                            knowledge to enhance our understanding of the
+                            miraculous world beyond.
+                        </p>
+                    </div>
+                    <a id="join" class="glass button" href="">Join the Club</a>
+                </div>
+            </section>
+            <section
+                class="full-width"
+                style="width: 100%; height: 100px; background-color: #ffffff"
+            >
+                <!-- TODO: Make it so that the jump is offset to account for the header -->
+                <a href="#bulletin">Jump to Bulletin</a>
+            </section>
+            <section id="faq" class="full-width">
+                <!-- TODO: Rename "two-wrapper" -->
+                <div id="stripe" class="full-width two-wrapper">
+                    <div class="two">
+                        <img
+                            src="assets/images/CubeSatExample.jpg"
+                            alt="CubeSat Example"
+                        />
+                        <div class="glass panel">
+                            <h3>What is a CubeSat?</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Pellentesque id nibh tortor id aliquet.
+                                Sollicitudin nibh sit amet commodo nulla
+                                facilisi nullam. Congue eu consequat ac felis
+                                donec.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div id="bubbles" class="full-width two-wrapper">
+                    <div class="two">
+                        <div class="glass panel">
+                            <h3>Who are we?</h3>
+                            <p>
+                                Imperdiet dui accumsan sit amet nulla facilisi
+                                morbi tempus iaculis. Lorem ipsum dolor sit amet
+                                consectetur adipiscing elit. Ipsum suspendisse
+                                ultrices gravida dictum fusce ut. Eros in cursus
+                                turpis massa tincidunt dui ut ornare.
+                            </p>
+                        </div>
+                        <img src="assets/images/Team.jpg" alt="Our Team" />
+                    </div>
+                </div>
+                <div id="curve" class="full-width two-wrapper">
+                    <div class="two">
+                        <img
+                            src="assets/images/CLSI.jpg"
+                            alt="The Electron rocket launching CubeSats for NASA"
+                        />
+                        <div class="glass panel">
+                            <h3>How?</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Pellentesque id nibh tortor id aliquet.
+                                Sollicitudin nibh sit amet commodo nulla
+                                facilisi nullam. Congue eu consequat ac felis
+                                donec.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-width two-wrapper">
+                    <div class="two">
+                        <div class="glass panel">
+                            <h3>Why?</h3>
+                            <p>
+                                Imperdiet dui accumsan sit amet nulla facilisi
+                                morbi tempus iaculis. Lorem ipsum dolor sit amet
+                                consectetur adipiscing elit. Ipsum suspendisse
+                                ultrices gravida dictum fusce ut. Eros in cursus
+                                turpis massa tincidunt dui ut ornare.
+                            </p>
+                        </div>
+                        <img
+                            src="assets/images/CubeSatExample.jpg"
+                            alt="CubeSat Example"
+                        />
+                    </div>
+                </div>
+                <div class="full-width two-wrapper">
+                    <div class="two">
+                        <img
+                            src="assets/images/CubeSatExample.jpg"
+                            alt="CubeSat Example"
+                        />
+                        <div class="glass panel">
+                            <h3>How can I help?</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Pellentesque id nibh tortor id aliquet.
+                                Sollicitudin nibh sit amet commodo nulla
+                                facilisi nullam. Congue eu consequat ac felis
+                                donec.
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-<body>
-    <header>
-        <!-- TODO: Remove wrappers -->
-        <div id="header-wrapper">
-            <div class="header-padding">
-                <a id="logo" href="" title="WTW CubeSat test"></a>
-            </div>
-            <div id="title-wrapper">
-                <img src="assets/LogoText.svg" alt="WTW CubeSat">
-                <nav>
-                    <a class="active glass button" href="index.html">Home</a>
-                    <a class="glass button" href="update.html">Updates</a>
-                    <a class="glass button" href="cubesat.html">CubeSat</a>
-                    <a class="glass button" href="gs.html">Ground Station Network</a>
-                    <a class="glass button" href="about.html">About</a>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section id="hero" class="full-width">
-            <div id="hero-text-wrapper">
-                <!-- TODO: Make this parallax -->
-                <div id="hero-text" class="glass panel">
-                    <p>Our mission at the W.T. Woodson CubeSat Club is to advance space exploration knowledge, foster
-                        respect, responsibility, teamwork, collaboration, and integrity. We seek innovative ideas,
-                        sharing knowledge to enhance our understanding of the miraculous world beyond.</p>
-                </div>
-                <a id="join" class="glass button" href="">Join the Club</a>
-            </div>
-        </section>
-        <section class="full-width" style="width: 100%; height: 100px; background-color: #ffffff;">
-            <!-- TODO: Make it so that the jump is offset to account for the header -->
-            <a href="#bulletin">Jump to Bulletin</a>
-        </section>
-        <section id="faq" class="full-width">
-            <!-- TODO: Rename "two-wrapper" -->
-            <div id="stripe" class="full-width two-wrapper">
-                <div class="two">
-                    <img src="assets/images/CubeSatExample.jpg" alt="CubeSat Example">
-                    <div class="glass panel">
-                        <h3>What is a CubeSat?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Pellentesque id nibh tortor id aliquet. Sollicitudin nibh sit
-                            amet commodo nulla facilisi nullam. Congue eu consequat ac felis donec.</p>
+                <div class="full-width two-wrapper">
+                    <div class="two">
+                        <img
+                            src="assets/AFA logo.png"
+                            alt="Air Force Association Logo"
+                        />
+                        <div class="glass panel">
+                            <h3>Premium Sponsor</h3>
+                            <p>
+                                AFA has helped us... orem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                                aliqua. Pellentesque id nibh tortor id aliquet.
+                                Sollicitudin nibh sit amet commodo nulla
+                                facilisi nullam. Congue eu consequat ac felis
+                                donec.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="bubbles" class="full-width two-wrapper">
-                <div class="two">
-                    <div class="glass panel">
-                        <h3>Who are we?</h3>
-                        <p>Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Lorem ipsum dolor sit
-                            amet consectetur adipiscing elit. Ipsum suspendisse ultrices gravida dictum fusce ut. Eros
-                            in cursus turpis massa tincidunt dui ut ornare.</p>
-                    </div>
-                    <img src="assets/images/Team.jpg" alt="Our Team">
-                </div>
-            </div>
-            <div id="curve" class="full-width two-wrapper">
-                <div class="two">
-                    <img src="assets/images/CLSI.jpg" alt="The Electron rocket launching CubeSats for NASA">
-                    <div class="glass panel">
-                        <h3>How?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Pellentesque id nibh tortor id aliquet. Sollicitudin nibh sit
-                            amet commodo nulla facilisi nullam. Congue eu consequat ac felis donec.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="full-width two-wrapper">
-                <div class="two">
-                    <div class="glass panel">
-                        <h3>Why?</h3>
-                        <p>Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. Lorem ipsum dolor sit
-                            amet consectetur adipiscing elit. Ipsum suspendisse ultrices gravida dictum fusce ut. Eros
-                            in cursus turpis massa tincidunt dui ut ornare.</p>
-                    </div>
-                    <img src="assets/images/CubeSatExample.jpg" alt="CubeSat Example">
-                </div>
-            </div>
-            <div class="full-width two-wrapper">
-                <div class="two">
-                    <img src="assets/images/CubeSatExample.jpg" alt="CubeSat Example">
-                    <div class="glass panel">
-                        <h3>How can I help?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Pellentesque id nibh tortor id aliquet. Sollicitudin nibh sit
-                            amet commodo nulla facilisi nullam. Congue eu consequat ac felis donec.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="full-width two-wrapper">
-                <div class = "two">
-                    <img src="assets/AFA logo.png" alt="Air Force Association Logo">
-                    <div class = "glass panel">
-                    <h3>Premium Sponsor</h3>
-                    <p>AFA has helped us... orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Pellentesque id nibh tortor id aliquet. Sollicitudin nibh sit
-                        amet commodo nulla facilisi nullam. Congue eu consequat ac felis donec.</p>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        <!--
+            </section>
+            <!--
         <section id="bulletin">
             <h2>Bulletin</h2>
             <div id="slideshow" class="glass panel"></div>
             <figure data-behold-id="jk9y5Gw9UuRnjrySYyfx"></figure>
         </section>
-        -->
-    </main>
-    <footer>
-        <!-- TODO: Add an act of recourse if the images fail to load -->
-        <!-- TODO: Make icons consistent with one another -->
-        <div class="footer-pair">
-            <!-- Social Media Links -->
-            <div style="display: flex; gap: 10px;">
-                <a id="insta-icon" title="WTW CubeSat Instagram" href="https://www.instagram.com/wtw.cubesat/"
-                    target="_blank" rel="noopener noreferrer"></a>
-                <a id="github-icon" title="WTW CubeSat Github" href="https://github.com/WTW-CubeSat-Club"
-                    target="_blank" rel="noopener noreferrer"></a>
-            </div>
+        --></main>
+        <footer>
+            <!-- TODO: Add an act of recourse if the images fail to load -->
+            <!-- TODO: Make icons consistent with one another -->
+            <div class="footer-pair">
+                <!-- Social Media Links -->
+                <div style="display: flex; gap: 10px">
+                    <a
+                        id="insta-icon"
+                        title="WTW CubeSat Instagram"
+                        href="https://www.instagram.com/wtw.cubesat/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+                    <a
+                        id="github-icon"
+                        title="WTW CubeSat Github"
+                        href="https://github.com/WTW-CubeSat-Club"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+                </div>
 
-            <div style="display: flex; gap: 10px;">
-                <a id="school-icon" title="W.T.&nbsp;Woodson&nbsp;HS Website" href="https://woodsonhs.fcps.edu/"
-                    target="_blank" rel="noopener noreferrer"></a>
-                <a id="mail-icon" title="WTW CubeSat Email" href="mailto:embabcock@fcps.edu" target="_blank"
-                    rel="noopener noreferrer"></a>
+                <div style="display: flex; gap: 10px">
+                    <a
+                        id="school-icon"
+                        title="W.T.&nbsp;Woodson&nbsp;HS Website"
+                        href="https://woodsonhs.fcps.edu/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+                    <a
+                        id="mail-icon"
+                        title="WTW CubeSat Email"
+                        href="mailto:embabcock@fcps.edu"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    ></a>
+                </div>
             </div>
-        </div>
-        <!-- Copyright notice -->
-        <div class="footer-pair">
-            <!-- TODO: Make the pipes pseudo-elements -->
-            <p>Established 2023 | Made with ♥️ by the Programming Team</p>
-            <p>Copyright © 2024 W.T. Woodson HS CubeSat Club | All rights reserved</p>
-        </div>
-    </footer>
-    <button onclick="scrollToTop()" id="scroll-button" title="Scroll to top"></button>
-</body>
-
+            <!-- Copyright notice -->
+            <div class="footer-pair">
+                <!-- TODO: Make the pipes pseudo-elements -->
+                <p>Established 2023 | Made with ♥️ by the Programming Team</p>
+                <p>
+                    Copyright © 2024 W.T. Woodson HS CubeSat Club | All rights
+                    reserved
+                </p>
+            </div>
+        </footer>
+        <button
+            onclick="scrollToTop()"
+            id="scroll-button"
+            title="Scroll to top"
+        ></button>
+    </body>
 </html>
