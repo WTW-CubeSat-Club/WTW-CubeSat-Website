@@ -37,6 +37,18 @@ h6 {
     color: var(--theme-tertiary);
 }
 
+h2{
+    font-size: 3em;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Vertically center */
+    height: 100%; /* Ensure the container takes up the full height */
+    text-align: center; /* Horizontally center */
+}
+
 p,
 span,
 small {
